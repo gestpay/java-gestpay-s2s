@@ -7,13 +7,16 @@ import org.w3c.dom.NodeList;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import java.util.logging.Logger;
 
 /**
- * Created by michelenasti on 22/03/17.
+ * This is an example of calling callPagamS2S of WsS2S.
+ *
+ * More info here: http://docs.gestpay.it/adv/authorization-request.html
+ *
+ * Api details: http://api.gestpay.it/#callpagams2s
+ *
  */
 public class CallPagamS2SExample {
 
@@ -25,6 +28,7 @@ public class CallPagamS2SExample {
     System.setProperty("java.util.logging.SimpleFormatter.format",
         "%1$tF %1$tT %4$s %2$s %5$s%6$s%n");
 
+    //instantiate the webservice
     WSs2S wSs2S = new WSs2S();
     WSs2SSoap wSs2SSoap = wSs2S.getWSs2SSoap();
 
@@ -35,7 +39,6 @@ public class CallPagamS2SExample {
     DateFormat df = new SimpleDateFormat("_yyyy-MM-dd-HH-mm-ss-SSS");
     String shopTransactionId = "MYSHOP_" + df.format(new Date());
 
-    //credit card data
     String cardNumber = "4775718800002026";
     String expiryMonth = "05";
     String expiryYear = "27";
@@ -57,6 +60,7 @@ public class CallPagamS2SExample {
     ApplePayRequest applePay = null;
     EcommGestpayPaymentDetails orderDetails = null;
 
+    //call Gestpay...
     CallPagamS2SResponse.CallPagamS2SResult callPagamS2SResult = wSs2SSoap.callPagamS2S(shopLogin, uicCode, amount, shopTransactionId, cardNumber, expiryMonth, expiryYear,
         buyerName, buyerEmail, languageId, cvv, null, transKey, paRes, customInfo, null, requestToken, tokenValue,
         clientIP, itemType, recurrent, shippingDetails, null, null, null, null, null, null, null, applePay, orderDetails);
@@ -65,19 +69,21 @@ public class CallPagamS2SExample {
       showErrorMessage();
     }
 
+    // use DOM api to retrieve data from webservice
     Element response = (Element) callPagamS2SResult.getContent().get(0);
 
     logResponse(response);
 
   }
 
+  /**
+   * Shows data coming from Gestpay in a nice form.
+   * @param response
+   */
   private static void logResponse(Element response) {
 
     logger.info("Element " + response.getTagName() + ": ");
     NodeList nodeList = response.getChildNodes();
-
-    List<Node> propertiesWithContent = new ArrayList<Node>();
-    List<Node> propertiesWithoutContent = new ArrayList<Node>();
 
     for (int i=0; i<nodeList.getLength(); i++) {
 
@@ -86,6 +92,9 @@ public class CallPagamS2SExample {
     }
   }
 
+  /**
+   * Shows an error in case of problems.
+   */
   private static void showErrorMessage() {
     logger.severe("No response received from webservice.");
   }
