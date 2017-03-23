@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "WSs2s", targetNamespace = "https://ecomms2s.sella.it/", wsdlLocation = "https://ecomms2s.sella.it/gestpay/gestpayws/WSs2s.asmx?WSDL")
+@WebServiceClient(name = "WSs2s", targetNamespace = "https://ecomms2s.sella.it/", wsdlLocation = "https://testecomm.sella.it/gestpay/gestpayws/WSs2s.asmx?WSDL")
 public class WSs2S
     extends Service
 {
@@ -30,7 +30,7 @@ public class WSs2S
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("https://ecomms2s.sella.it/gestpay/gestpayws/WSs2s.asmx?WSDL");
+            url = new URL("https://testecomm.sella.it/gestpay/gestpayws/WSs2s.asmx?WSDL");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

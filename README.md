@@ -15,6 +15,6 @@ In case of changes to the endpoint, you might want to regenerate classes. You ca
   -s src/main/java/ \
   -p it.gestpay.wss2s.model \
   -Xnocompile \
-  https://ecomms2s.sella.it/gestpay/gestpayws/WSs2s.asmx\?WSDL
+  https://testecomm.sella.it/gestpay/gestpayws/WSs2s.asmx?WSDL
   ```
 
