@@ -2,13 +2,14 @@ package examples;
 
 import it.gestpay.wss2s.model.*;
 import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.logging.Logger;
+
+import static util.Utils.logNode;
+import static util.Utils.showErrorMessage;
 
 /**
  * This is an example of calling callPagamS2S of WsS2S.
@@ -72,30 +73,8 @@ public class CallPagamS2SExample {
     // use DOM api to retrieve data from webservice
     Element response = (Element) callPagamS2SResult.getContent().get(0);
 
-    logResponse(response);
+    logNode(response);
 
   }
 
-  /**
-   * Shows data coming from Gestpay in a nice form.
-   * @param response
-   */
-  private static void logResponse(Element response) {
-
-    logger.info("Element " + response.getTagName() + ": ");
-    NodeList nodeList = response.getChildNodes();
-
-    for (int i=0; i<nodeList.getLength(); i++) {
-
-      Node node = nodeList.item(i);
-      logger.info("    " + node.getNodeName() + " => " + node.getTextContent());
-    }
-  }
-
-  /**
-   * Shows an error in case of problems.
-   */
-  private static void showErrorMessage() {
-    logger.severe("No response received from webservice.");
-  }
 }

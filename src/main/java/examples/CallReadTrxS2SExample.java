@@ -4,9 +4,11 @@ import it.gestpay.wss2s.model.CallReadTrxS2SResponse;
 import it.gestpay.wss2s.model.WSs2S;
 import it.gestpay.wss2s.model.WSs2SSoap;
 import org.w3c.dom.Element;
-import org.w3c.dom.Node;
 
 import java.util.logging.Logger;
+
+import static util.Utils.logNode;
+import static util.Utils.showErrorMessage;
 
 /**
  * This is an example of calling callReadTrxS2S of WsS2S.
@@ -46,39 +48,9 @@ public class CallReadTrxS2SExample {
     // use DOM api to retrieve data from webservice
     Element response = (Element) callReadTrxS2SResult.getContent().get(0);
 
-    logNode(response, 0);
+    logNode(response);
 
   }
 
-  private static void logNode(Node node, int level) {
-    String spacing = repeat("  ", level);
 
-    if (node.getNodeType() == Node.ELEMENT_NODE) {
-      System.out.println(spacing + node.getNodeName() + ": ");
-    }
-
-
-    if (node.getNodeType() == Node.TEXT_NODE) {
-      System.out.println(spacing + "  => " + node.getTextContent());
-    }
-
-
-    else {
-      for (int i=0; i<node.getChildNodes().getLength(); i++) {
-        Node item = node.getChildNodes().item(i);
-        logNode(item, level+1);
-      }
-    }
-  }
-
-  public static String repeat(String s, int count) {
-    return count > 0 ? s + repeat(s, --count) : "";
-  }
-
-  /**
-   * Shows an error in case of problems. 
-   */
-  private static void showErrorMessage() {
-    logger.severe("No response received from webservice.");
-  }
 }
