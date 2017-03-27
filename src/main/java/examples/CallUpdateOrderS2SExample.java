@@ -11,7 +11,7 @@ import static util.Utils.showErrorMessage;
 /**
  * This is an example of calling callUpdateOrderS2S of WsS2S.
  *
- * More info here: http://docs.gestpay.it/adv/mybank-list.html
+ * To be used only by merchants adhering to Gestpay Guaranteed Checkout.
  *
  * Api details: http://api.gestpay.it/#callupdateorders2s
  *
