@@ -21,7 +21,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="callSettleS2SResult" minOccurs="0">
+ *         &lt;element name="callDeviceActivationResult" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -42,35 +42,35 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "callSettleS2SResult"
+    "callDeviceActivationResult"
 })
-@XmlRootElement(name = "callSettleS2SResponse")
-public class CallSettleS2SResponse {
+@XmlRootElement(name = "callDeviceActivationResponse")
+public class CallDeviceActivationResponse {
 
-    protected CallSettleS2SResponse.CallSettleS2SResult callSettleS2SResult;
+    protected CallDeviceActivationResponse.CallDeviceActivationResult callDeviceActivationResult;
 
     /**
-     * Gets the value of the callSettleS2SResult property.
+     * Gets the value of the callDeviceActivationResult property.
      * 
      * @return
      *     possible object is
-     *     {@link CallSettleS2SResponse.CallSettleS2SResult }
+     *     {@link CallDeviceActivationResponse.CallDeviceActivationResult }
      *     
      */
-    public CallSettleS2SResponse.CallSettleS2SResult getCallSettleS2SResult() {
-        return callSettleS2SResult;
+    public CallDeviceActivationResponse.CallDeviceActivationResult getCallDeviceActivationResult() {
+        return callDeviceActivationResult;
     }
 
     /**
-     * Sets the value of the callSettleS2SResult property.
+     * Sets the value of the callDeviceActivationResult property.
      * 
      * @param value
      *     allowed object is
-     *     {@link CallSettleS2SResponse.CallSettleS2SResult }
+     *     {@link CallDeviceActivationResponse.CallDeviceActivationResult }
      *     
      */
-    public void setCallSettleS2SResult(CallSettleS2SResponse.CallSettleS2SResult value) {
-        this.callSettleS2SResult = value;
+    public void setCallDeviceActivationResult(CallDeviceActivationResponse.CallDeviceActivationResult value) {
+        this.callDeviceActivationResult = value;
     }
 
 
@@ -97,7 +97,7 @@ public class CallSettleS2SResponse {
     @XmlType(name = "", propOrder = {
         "content"
     })
-    public static class CallSettleS2SResult {
+    public static class CallDeviceActivationResult {
 
         @XmlMixed
         @XmlAnyElement(lax = true)

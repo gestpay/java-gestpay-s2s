@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per RedCustomerData complex type.
+ * <p>Java class for RedCustomerData complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="RedCustomerData">
@@ -56,7 +56,7 @@ public class RedCustomerData {
     protected String redServiceType;
 
     /**
-     * Recupera il valore della proprietà merchantWebSite.
+     * Gets the value of the merchantWebSite property.
      * 
      * @return
      *     possible object is
@@ -68,7 +68,7 @@ public class RedCustomerData {
     }
 
     /**
-     * Imposta il valore della proprietà merchantWebSite.
+     * Sets the value of the merchantWebSite property.
      * 
      * @param value
      *     allowed object is
@@ -80,7 +80,7 @@ public class RedCustomerData {
     }
 
     /**
-     * Recupera il valore della proprietà customerIPAddress.
+     * Gets the value of the customerIPAddress property.
      * 
      * @return
      *     possible object is
@@ -92,7 +92,7 @@ public class RedCustomerData {
     }
 
     /**
-     * Imposta il valore della proprietà customerIPAddress.
+     * Sets the value of the customerIPAddress property.
      * 
      * @param value
      *     allowed object is
@@ -104,7 +104,7 @@ public class RedCustomerData {
     }
 
     /**
-     * Recupera il valore della proprietà pcFingerPrint.
+     * Gets the value of the pcFingerPrint property.
      * 
      * @return
      *     possible object is
@@ -116,7 +116,7 @@ public class RedCustomerData {
     }
 
     /**
-     * Imposta il valore della proprietà pcFingerPrint.
+     * Sets the value of the pcFingerPrint property.
      * 
      * @param value
      *     allowed object is
@@ -128,7 +128,7 @@ public class RedCustomerData {
     }
 
     /**
-     * Recupera il valore della proprietà previousCustomer.
+     * Gets the value of the previousCustomer property.
      * 
      * @return
      *     possible object is
@@ -140,7 +140,7 @@ public class RedCustomerData {
     }
 
     /**
-     * Imposta il valore della proprietà previousCustomer.
+     * Sets the value of the previousCustomer property.
      * 
      * @param value
      *     allowed object is
@@ -152,7 +152,7 @@ public class RedCustomerData {
     }
 
     /**
-     * Recupera il valore della proprietà redMerchantID.
+     * Gets the value of the redMerchantID property.
      * 
      * @return
      *     possible object is
@@ -164,7 +164,7 @@ public class RedCustomerData {
     }
 
     /**
-     * Imposta il valore della proprietà redMerchantID.
+     * Sets the value of the redMerchantID property.
      * 
      * @param value
      *     allowed object is
@@ -176,7 +176,7 @@ public class RedCustomerData {
     }
 
     /**
-     * Recupera il valore della proprietà redServiceType.
+     * Gets the value of the redServiceType property.
      * 
      * @return
      *     possible object is
@@ -188,7 +188,7 @@ public class RedCustomerData {
     }
 
     /**
-     * Imposta il valore della proprietà redServiceType.
+     * Sets the value of the redServiceType property.
      * 
      * @param value
      *     allowed object is

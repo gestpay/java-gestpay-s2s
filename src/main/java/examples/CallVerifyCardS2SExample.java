@@ -21,7 +21,7 @@ import static util.Utils.showErrorMessage;
  * Api details: http://api.gestpay.it/#callverifycards2s
  *
  */
-public class CallVerifycardS2SExample {
+public class CallVerifyCardS2SExample {
 
   private static Logger logger = Logger.getLogger("CallVerifycardS2SExample");
 
@@ -39,14 +39,17 @@ public class CallVerifycardS2SExample {
     String shopLogin = " GESPAY65987";
     DateFormat df = new SimpleDateFormat("_yyyy-MM-dd-HH-mm-ss-SSS");
     String shopTransactionId = "MYSHOP_" + df.format(new Date());
-    String cardNumber = "5412388800004012"; //test credit card
+    String cardNumber = "5412388800004012"; //test credit card 
     String expMonth = "05";
     String expYear = "27";
     String cvv2 = "841";
 
+    //set a value if you use apiKey authentication
+    String apiKey = null; 
+
     //call Gestpay ...
     CallVerifycardS2SResponse.CallVerifycardS2SResult callVerifycardS2SResult = wSs2SSoap.callVerifycardS2S(shopLogin,
-        shopTransactionId, cardNumber, expMonth, expYear, cvv2);
+        shopTransactionId, cardNumber, expMonth, expYear, cvv2, apiKey);
 
     if (callVerifycardS2SResult.getContent() == null) {
       showErrorMessage();

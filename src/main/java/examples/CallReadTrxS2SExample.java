@@ -36,10 +36,14 @@ public class CallReadTrxS2SExample {
     String shopLogin = " GESPAY65987";
     String shopTransactionId = null;
     String bankTransactionId = "137";
+    
+    //set a value if you use apiKey authentication
+    String apiKey = null; 
 
+    
     //call Gestpay ...
     CallReadTrxS2SResponse.CallReadTrxS2SResult callReadTrxS2SResult = wSs2SSoap.callReadTrxS2S(shopLogin,
-        shopTransactionId, bankTransactionId);
+        shopTransactionId, bankTransactionId, apiKey, null);
 
     if (callReadTrxS2SResult.getContent() == null) {
       showErrorMessage();

@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per EcommGestpayPaymentDetails complex type.
+ * <p>Java class for EcommGestpayPaymentDetails complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="EcommGestpayPaymentDetails">
@@ -24,6 +24,8 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="ProductDetails" type="{https://ecomms2s.sella.it/}ArrayOfProductDetail" minOccurs="0"/>
  *         &lt;element name="DiscountCodes" type="{https://ecomms2s.sella.it/}ArrayOfDiscountCode" minOccurs="0"/>
  *         &lt;element name="ShippingLines" type="{https://ecomms2s.sella.it/}ArrayOfShippingLine" minOccurs="0"/>
+ *         &lt;element name="AccommodationDetails" type="{https://ecomms2s.sella.it/}ArrayOfAccommodationDetail" minOccurs="0"/>
+ *         &lt;element name="PassengerDetails" type="{https://ecomms2s.sella.it/}ArrayOfPassengerDetail" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -40,7 +42,9 @@ import javax.xml.bind.annotation.XmlType;
     "billingAddress",
     "productDetails",
     "discountCodes",
-    "shippingLines"
+    "shippingLines",
+    "accommodationDetails",
+    "passengerDetails"
 })
 public class EcommGestpayPaymentDetails {
 
@@ -58,9 +62,13 @@ public class EcommGestpayPaymentDetails {
     protected ArrayOfDiscountCode discountCodes;
     @XmlElement(name = "ShippingLines")
     protected ArrayOfShippingLine shippingLines;
+    @XmlElement(name = "AccommodationDetails")
+    protected ArrayOfAccommodationDetail accommodationDetails;
+    @XmlElement(name = "PassengerDetails")
+    protected ArrayOfPassengerDetail passengerDetails;
 
     /**
-     * Recupera il valore della proprietà fraudPrevention.
+     * Gets the value of the fraudPrevention property.
      * 
      * @return
      *     possible object is
@@ -72,7 +80,7 @@ public class EcommGestpayPaymentDetails {
     }
 
     /**
-     * Imposta il valore della proprietà fraudPrevention.
+     * Sets the value of the fraudPrevention property.
      * 
      * @param value
      *     allowed object is
@@ -84,7 +92,7 @@ public class EcommGestpayPaymentDetails {
     }
 
     /**
-     * Recupera il valore della proprietà customerDetail.
+     * Gets the value of the customerDetail property.
      * 
      * @return
      *     possible object is
@@ -96,7 +104,7 @@ public class EcommGestpayPaymentDetails {
     }
 
     /**
-     * Imposta il valore della proprietà customerDetail.
+     * Sets the value of the customerDetail property.
      * 
      * @param value
      *     allowed object is
@@ -108,7 +116,7 @@ public class EcommGestpayPaymentDetails {
     }
 
     /**
-     * Recupera il valore della proprietà shippingAddress.
+     * Gets the value of the shippingAddress property.
      * 
      * @return
      *     possible object is
@@ -120,7 +128,7 @@ public class EcommGestpayPaymentDetails {
     }
 
     /**
-     * Imposta il valore della proprietà shippingAddress.
+     * Sets the value of the shippingAddress property.
      * 
      * @param value
      *     allowed object is
@@ -132,7 +140,7 @@ public class EcommGestpayPaymentDetails {
     }
 
     /**
-     * Recupera il valore della proprietà billingAddress.
+     * Gets the value of the billingAddress property.
      * 
      * @return
      *     possible object is
@@ -144,7 +152,7 @@ public class EcommGestpayPaymentDetails {
     }
 
     /**
-     * Imposta il valore della proprietà billingAddress.
+     * Sets the value of the billingAddress property.
      * 
      * @param value
      *     allowed object is
@@ -156,7 +164,7 @@ public class EcommGestpayPaymentDetails {
     }
 
     /**
-     * Recupera il valore della proprietà productDetails.
+     * Gets the value of the productDetails property.
      * 
      * @return
      *     possible object is
@@ -168,7 +176,7 @@ public class EcommGestpayPaymentDetails {
     }
 
     /**
-     * Imposta il valore della proprietà productDetails.
+     * Sets the value of the productDetails property.
      * 
      * @param value
      *     allowed object is
@@ -180,7 +188,7 @@ public class EcommGestpayPaymentDetails {
     }
 
     /**
-     * Recupera il valore della proprietà discountCodes.
+     * Gets the value of the discountCodes property.
      * 
      * @return
      *     possible object is
@@ -192,7 +200,7 @@ public class EcommGestpayPaymentDetails {
     }
 
     /**
-     * Imposta il valore della proprietà discountCodes.
+     * Sets the value of the discountCodes property.
      * 
      * @param value
      *     allowed object is
@@ -204,7 +212,7 @@ public class EcommGestpayPaymentDetails {
     }
 
     /**
-     * Recupera il valore della proprietà shippingLines.
+     * Gets the value of the shippingLines property.
      * 
      * @return
      *     possible object is
@@ -216,7 +224,7 @@ public class EcommGestpayPaymentDetails {
     }
 
     /**
-     * Imposta il valore della proprietà shippingLines.
+     * Sets the value of the shippingLines property.
      * 
      * @param value
      *     allowed object is
@@ -225,6 +233,54 @@ public class EcommGestpayPaymentDetails {
      */
     public void setShippingLines(ArrayOfShippingLine value) {
         this.shippingLines = value;
+    }
+
+    /**
+     * Gets the value of the accommodationDetails property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link ArrayOfAccommodationDetail }
+     *     
+     */
+    public ArrayOfAccommodationDetail getAccommodationDetails() {
+        return accommodationDetails;
+    }
+
+    /**
+     * Sets the value of the accommodationDetails property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ArrayOfAccommodationDetail }
+     *     
+     */
+    public void setAccommodationDetails(ArrayOfAccommodationDetail value) {
+        this.accommodationDetails = value;
+    }
+
+    /**
+     * Gets the value of the passengerDetails property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link ArrayOfPassengerDetail }
+     *     
+     */
+    public ArrayOfPassengerDetail getPassengerDetails() {
+        return passengerDetails;
+    }
+
+    /**
+     * Sets the value of the passengerDetails property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ArrayOfPassengerDetail }
+     *     
+     */
+    public void setPassengerDetails(ArrayOfPassengerDetail value) {
+        this.passengerDetails = value;
     }
 
 }

@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per ApplePayRequest complex type.
+ * <p>Java class for ApplePayRequest complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="ApplePayRequest">
@@ -40,7 +40,7 @@ public class ApplePayRequest {
     protected String eciIndicator;
 
     /**
-     * Recupera il valore della proprietà applePayPKPaymentToken.
+     * Gets the value of the applePayPKPaymentToken property.
      * 
      * @return
      *     possible object is
@@ -52,7 +52,7 @@ public class ApplePayRequest {
     }
 
     /**
-     * Imposta il valore della proprietà applePayPKPaymentToken.
+     * Sets the value of the applePayPKPaymentToken property.
      * 
      * @param value
      *     allowed object is
@@ -64,7 +64,7 @@ public class ApplePayRequest {
     }
 
     /**
-     * Recupera il valore della proprietà onlinePaymentCryptogram.
+     * Gets the value of the onlinePaymentCryptogram property.
      * 
      * @return
      *     possible object is
@@ -76,7 +76,7 @@ public class ApplePayRequest {
     }
 
     /**
-     * Imposta il valore della proprietà onlinePaymentCryptogram.
+     * Sets the value of the onlinePaymentCryptogram property.
      * 
      * @param value
      *     allowed object is
@@ -88,7 +88,7 @@ public class ApplePayRequest {
     }
 
     /**
-     * Recupera il valore della proprietà eciIndicator.
+     * Gets the value of the eciIndicator property.
      * 
      * @return
      *     possible object is
@@ -100,7 +100,7 @@ public class ApplePayRequest {
     }
 
     /**
-     * Imposta il valore della proprietà eciIndicator.
+     * Sets the value of the eciIndicator property.
      * 
      * @param value
      *     allowed object is

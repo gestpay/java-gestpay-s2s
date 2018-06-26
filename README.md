@@ -53,7 +53,7 @@ In case of changes to the endpoint, you might want to regenerate classes. You ca
   -s src/main/java/ \
   -p it.gestpay.wss2s.model \
   -Xnocompile \
-  https://testecomm.sella.it/gestpay/gestpayws/WSs2s.asmx?WSDL
+  https://sandbox.gestpay.net/gestpay/gestpayws/WSs2s.asmx?WSDL
   ```
 
 If you want to generate classes for **production** endpoint, substitute last line with `https://ecomms2s.sella.it/gestpay/gestpayws/WSs2s.asmx?WSDL

@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -19,6 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="shopLogin" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="languageId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="apikey" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -30,16 +31,18 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
     "shopLogin",
-    "languageId"
+    "languageId",
+    "apikey"
 })
 @XmlRootElement(name = "CallMyBankListS2S")
 public class CallMyBankListS2S {
 
     protected String shopLogin;
     protected String languageId;
+    protected String apikey;
 
     /**
-     * Recupera il valore della proprietà shopLogin.
+     * Gets the value of the shopLogin property.
      * 
      * @return
      *     possible object is
@@ -51,7 +54,7 @@ public class CallMyBankListS2S {
     }
 
     /**
-     * Imposta il valore della proprietà shopLogin.
+     * Sets the value of the shopLogin property.
      * 
      * @param value
      *     allowed object is
@@ -63,7 +66,7 @@ public class CallMyBankListS2S {
     }
 
     /**
-     * Recupera il valore della proprietà languageId.
+     * Gets the value of the languageId property.
      * 
      * @return
      *     possible object is
@@ -75,7 +78,7 @@ public class CallMyBankListS2S {
     }
 
     /**
-     * Imposta il valore della proprietà languageId.
+     * Sets the value of the languageId property.
      * 
      * @param value
      *     allowed object is
@@ -84,6 +87,30 @@ public class CallMyBankListS2S {
      */
     public void setLanguageId(String value) {
         this.languageId = value;
+    }
+
+    /**
+     * Gets the value of the apikey property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getApikey() {
+        return apikey;
+    }
+
+    /**
+     * Sets the value of the apikey property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setApikey(String value) {
+        this.apikey = value;
     }
 
 }

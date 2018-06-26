@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per CustomerSocial complex type.
+ * <p>Java class for CustomerSocial complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="CustomerSocial">
@@ -84,7 +84,7 @@ public class CustomerSocial {
     protected String socialData;
 
     /**
-     * Recupera il valore della proprietà network.
+     * Gets the value of the network property.
      * 
      * @return
      *     possible object is
@@ -96,7 +96,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Imposta il valore della proprietà network.
+     * Sets the value of the network property.
      * 
      * @param value
      *     allowed object is
@@ -108,7 +108,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Recupera il valore della proprietà publicUsername.
+     * Gets the value of the publicUsername property.
      * 
      * @return
      *     possible object is
@@ -120,7 +120,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Imposta il valore della proprietà publicUsername.
+     * Sets the value of the publicUsername property.
      * 
      * @param value
      *     allowed object is
@@ -132,7 +132,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Recupera il valore della proprietà communityScore.
+     * Gets the value of the communityScore property.
      * 
      * @return
      *     possible object is
@@ -144,7 +144,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Imposta il valore della proprietà communityScore.
+     * Sets the value of the communityScore property.
      * 
      * @param value
      *     allowed object is
@@ -156,7 +156,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Recupera il valore della proprietà profilePicture.
+     * Gets the value of the profilePicture property.
      * 
      * @return
      *     possible object is
@@ -168,7 +168,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Imposta il valore della proprietà profilePicture.
+     * Sets the value of the profilePicture property.
      * 
      * @param value
      *     allowed object is
@@ -180,7 +180,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Recupera il valore della proprietà email.
+     * Gets the value of the email property.
      * 
      * @return
      *     possible object is
@@ -192,7 +192,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Imposta il valore della proprietà email.
+     * Sets the value of the email property.
      * 
      * @param value
      *     allowed object is
@@ -204,7 +204,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Recupera il valore della proprietà bio.
+     * Gets the value of the bio property.
      * 
      * @return
      *     possible object is
@@ -216,7 +216,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Imposta il valore della proprietà bio.
+     * Sets the value of the bio property.
      * 
      * @param value
      *     allowed object is
@@ -228,7 +228,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Recupera il valore della proprietà accountUrl.
+     * Gets the value of the accountUrl property.
      * 
      * @return
      *     possible object is
@@ -240,7 +240,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Imposta il valore della proprietà accountUrl.
+     * Sets the value of the accountUrl property.
      * 
      * @param value
      *     allowed object is
@@ -252,7 +252,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Recupera il valore della proprietà following.
+     * Gets the value of the following property.
      * 
      * @return
      *     possible object is
@@ -264,7 +264,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Imposta il valore della proprietà following.
+     * Sets the value of the following property.
      * 
      * @param value
      *     allowed object is
@@ -276,7 +276,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Recupera il valore della proprietà followed.
+     * Gets the value of the followed property.
      * 
      * @return
      *     possible object is
@@ -288,7 +288,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Imposta il valore della proprietà followed.
+     * Sets the value of the followed property.
      * 
      * @param value
      *     allowed object is
@@ -300,7 +300,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Recupera il valore della proprietà posts.
+     * Gets the value of the posts property.
      * 
      * @return
      *     possible object is
@@ -312,7 +312,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Imposta il valore della proprietà posts.
+     * Sets the value of the posts property.
      * 
      * @param value
      *     allowed object is
@@ -324,7 +324,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Recupera il valore della proprietà id.
+     * Gets the value of the id property.
      * 
      * @return
      *     possible object is
@@ -336,7 +336,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Imposta il valore della proprietà id.
+     * Sets the value of the id property.
      * 
      * @param value
      *     allowed object is
@@ -348,7 +348,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Recupera il valore della proprietà authToken.
+     * Gets the value of the authToken property.
      * 
      * @return
      *     possible object is
@@ -360,7 +360,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Imposta il valore della proprietà authToken.
+     * Sets the value of the authToken property.
      * 
      * @param value
      *     allowed object is
@@ -372,7 +372,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Recupera il valore della proprietà socialData.
+     * Gets the value of the socialData property.
      * 
      * @return
      *     possible object is
@@ -384,7 +384,7 @@ public class CustomerSocial {
     }
 
     /**
-     * Imposta il valore della proprietà socialData.
+     * Sets the value of the socialData property.
      * 
      * @param value
      *     allowed object is

@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per RedShippingInfo complex type.
+ * <p>Java class for RedShippingInfo complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="RedShippingInfo">
@@ -84,7 +84,7 @@ public class RedShippingInfo {
     protected String shippingTimeToDeparture;
 
     /**
-     * Recupera il valore della proprietà shippingName.
+     * Gets the value of the shippingName property.
      * 
      * @return
      *     possible object is
@@ -96,7 +96,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà shippingName.
+     * Sets the value of the shippingName property.
      * 
      * @param value
      *     allowed object is
@@ -108,7 +108,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà shippingSurname.
+     * Gets the value of the shippingSurname property.
      * 
      * @return
      *     possible object is
@@ -120,7 +120,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà shippingSurname.
+     * Sets the value of the shippingSurname property.
      * 
      * @param value
      *     allowed object is
@@ -132,7 +132,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà shippingEmail.
+     * Gets the value of the shippingEmail property.
      * 
      * @return
      *     possible object is
@@ -144,7 +144,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà shippingEmail.
+     * Sets the value of the shippingEmail property.
      * 
      * @param value
      *     allowed object is
@@ -156,7 +156,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà shippingAddress.
+     * Gets the value of the shippingAddress property.
      * 
      * @return
      *     possible object is
@@ -168,7 +168,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà shippingAddress.
+     * Sets the value of the shippingAddress property.
      * 
      * @param value
      *     allowed object is
@@ -180,7 +180,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà shippingAddress2.
+     * Gets the value of the shippingAddress2 property.
      * 
      * @return
      *     possible object is
@@ -192,7 +192,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà shippingAddress2.
+     * Sets the value of the shippingAddress2 property.
      * 
      * @param value
      *     allowed object is
@@ -204,7 +204,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà shippingCity.
+     * Gets the value of the shippingCity property.
      * 
      * @return
      *     possible object is
@@ -216,7 +216,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà shippingCity.
+     * Sets the value of the shippingCity property.
      * 
      * @param value
      *     allowed object is
@@ -228,7 +228,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà shippingStateCode.
+     * Gets the value of the shippingStateCode property.
      * 
      * @return
      *     possible object is
@@ -240,7 +240,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà shippingStateCode.
+     * Sets the value of the shippingStateCode property.
      * 
      * @param value
      *     allowed object is
@@ -252,7 +252,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà shippingCountry.
+     * Gets the value of the shippingCountry property.
      * 
      * @return
      *     possible object is
@@ -264,7 +264,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà shippingCountry.
+     * Sets the value of the shippingCountry property.
      * 
      * @param value
      *     allowed object is
@@ -276,7 +276,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà shippingPostalCode.
+     * Gets the value of the shippingPostalCode property.
      * 
      * @return
      *     possible object is
@@ -288,7 +288,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà shippingPostalCode.
+     * Sets the value of the shippingPostalCode property.
      * 
      * @param value
      *     allowed object is
@@ -300,7 +300,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà shippingHomePhone.
+     * Gets the value of the shippingHomePhone property.
      * 
      * @return
      *     possible object is
@@ -312,7 +312,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà shippingHomePhone.
+     * Sets the value of the shippingHomePhone property.
      * 
      * @param value
      *     allowed object is
@@ -324,7 +324,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà shippingMobilePhone.
+     * Gets the value of the shippingMobilePhone property.
      * 
      * @return
      *     possible object is
@@ -336,7 +336,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà shippingMobilePhone.
+     * Sets the value of the shippingMobilePhone property.
      * 
      * @param value
      *     allowed object is
@@ -348,7 +348,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà shippingFaxPhone.
+     * Gets the value of the shippingFaxPhone property.
      * 
      * @return
      *     possible object is
@@ -360,7 +360,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà shippingFaxPhone.
+     * Sets the value of the shippingFaxPhone property.
      * 
      * @param value
      *     allowed object is
@@ -372,7 +372,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà shippingTimeToDeparture.
+     * Gets the value of the shippingTimeToDeparture property.
      * 
      * @return
      *     possible object is
@@ -384,7 +384,7 @@ public class RedShippingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà shippingTimeToDeparture.
+     * Sets the value of the shippingTimeToDeparture property.
      * 
      * @param value
      *     allowed object is

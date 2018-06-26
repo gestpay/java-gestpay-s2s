@@ -9,9 +9,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -39,6 +39,9 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="clientIP" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="itemType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="recurrent" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="subMerchantId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="paymentTypes" type="{https://ecomms2s.sella.it/}PaymentTypes" minOccurs="0"/>
+ *         &lt;element name="paymentDeviceDetails" type="{https://ecomms2s.sella.it/}PaymentDeviceDetails" minOccurs="0"/>
  *         &lt;element name="shippingDetails" type="{https://ecomms2s.sella.it/}ShippingDetails" minOccurs="0"/>
  *         &lt;element name="redFraudPrevention" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="Red_CustomerInfo" type="{https://ecomms2s.sella.it/}RedCustomerInfo" minOccurs="0"/>
@@ -48,7 +51,9 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="Red_CustomInfo" type="{https://ecomms2s.sella.it/}RedCustomInfo" minOccurs="0"/>
  *         &lt;element name="Red_Items" type="{https://ecomms2s.sella.it/}RedItems" minOccurs="0"/>
  *         &lt;element name="applePay" type="{https://ecomms2s.sella.it/}ApplePayRequest"/>
+ *         &lt;element name="cardReaderPayments" type="{https://ecomms2s.sella.it/}CardReaderPayments" minOccurs="0"/>
  *         &lt;element name="OrderDetails" type="{https://ecomms2s.sella.it/}EcommGestpayPaymentDetails" minOccurs="0"/>
+ *         &lt;element name="apikey" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -80,6 +85,9 @@ import javax.xml.bind.annotation.XmlType;
     "clientIP",
     "itemType",
     "recurrent",
+    "subMerchantId",
+    "paymentTypes",
+    "paymentDeviceDetails",
     "shippingDetails",
     "redFraudPrevention",
     "redCustomerInfo",
@@ -89,7 +97,9 @@ import javax.xml.bind.annotation.XmlType;
     "redCustomInfo",
     "redItems",
     "applePay",
-    "orderDetails"
+    "cardReaderPayments",
+    "orderDetails",
+    "apikey"
 })
 @XmlRootElement(name = "callPagamS2S")
 public class CallPagamS2S {
@@ -117,6 +127,9 @@ public class CallPagamS2S {
     protected String clientIP;
     protected String itemType;
     protected String recurrent;
+    protected String subMerchantId;
+    protected PaymentTypes paymentTypes;
+    protected PaymentDeviceDetails paymentDeviceDetails;
     protected ShippingDetails shippingDetails;
     protected String redFraudPrevention;
     @XmlElement(name = "Red_CustomerInfo")
@@ -133,11 +146,13 @@ public class CallPagamS2S {
     protected RedItems redItems;
     @XmlElement(required = true, nillable = true)
     protected ApplePayRequest applePay;
+    protected CardReaderPayments cardReaderPayments;
     @XmlElement(name = "OrderDetails")
     protected EcommGestpayPaymentDetails orderDetails;
+    protected String apikey;
 
     /**
-     * Recupera il valore della proprietà shopLogin.
+     * Gets the value of the shopLogin property.
      * 
      * @return
      *     possible object is
@@ -149,7 +164,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà shopLogin.
+     * Sets the value of the shopLogin property.
      * 
      * @param value
      *     allowed object is
@@ -161,7 +176,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà uicCode.
+     * Gets the value of the uicCode property.
      * 
      * @return
      *     possible object is
@@ -173,7 +188,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà uicCode.
+     * Sets the value of the uicCode property.
      * 
      * @param value
      *     allowed object is
@@ -185,7 +200,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà amount.
+     * Gets the value of the amount property.
      * 
      * @return
      *     possible object is
@@ -197,7 +212,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà amount.
+     * Sets the value of the amount property.
      * 
      * @param value
      *     allowed object is
@@ -209,7 +224,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà shopTransactionId.
+     * Gets the value of the shopTransactionId property.
      * 
      * @return
      *     possible object is
@@ -221,7 +236,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà shopTransactionId.
+     * Sets the value of the shopTransactionId property.
      * 
      * @param value
      *     allowed object is
@@ -233,7 +248,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà cardNumber.
+     * Gets the value of the cardNumber property.
      * 
      * @return
      *     possible object is
@@ -245,7 +260,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà cardNumber.
+     * Sets the value of the cardNumber property.
      * 
      * @param value
      *     allowed object is
@@ -257,7 +272,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà expiryMonth.
+     * Gets the value of the expiryMonth property.
      * 
      * @return
      *     possible object is
@@ -269,7 +284,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà expiryMonth.
+     * Sets the value of the expiryMonth property.
      * 
      * @param value
      *     allowed object is
@@ -281,7 +296,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà expiryYear.
+     * Gets the value of the expiryYear property.
      * 
      * @return
      *     possible object is
@@ -293,7 +308,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà expiryYear.
+     * Sets the value of the expiryYear property.
      * 
      * @param value
      *     allowed object is
@@ -305,7 +320,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà buyerName.
+     * Gets the value of the buyerName property.
      * 
      * @return
      *     possible object is
@@ -317,7 +332,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà buyerName.
+     * Sets the value of the buyerName property.
      * 
      * @param value
      *     allowed object is
@@ -329,7 +344,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà buyerEmail.
+     * Gets the value of the buyerEmail property.
      * 
      * @return
      *     possible object is
@@ -341,7 +356,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà buyerEmail.
+     * Sets the value of the buyerEmail property.
      * 
      * @param value
      *     allowed object is
@@ -353,7 +368,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà languageId.
+     * Gets the value of the languageId property.
      * 
      * @return
      *     possible object is
@@ -365,7 +380,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà languageId.
+     * Sets the value of the languageId property.
      * 
      * @param value
      *     allowed object is
@@ -377,7 +392,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà cvv.
+     * Gets the value of the cvv property.
      * 
      * @return
      *     possible object is
@@ -389,7 +404,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà cvv.
+     * Sets the value of the cvv property.
      * 
      * @param value
      *     allowed object is
@@ -401,7 +416,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà min.
+     * Gets the value of the min property.
      * 
      * @return
      *     possible object is
@@ -413,7 +428,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà min.
+     * Sets the value of the min property.
      * 
      * @param value
      *     allowed object is
@@ -425,7 +440,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà transKey.
+     * Gets the value of the transKey property.
      * 
      * @return
      *     possible object is
@@ -437,7 +452,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà transKey.
+     * Sets the value of the transKey property.
      * 
      * @param value
      *     allowed object is
@@ -449,7 +464,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà paRes.
+     * Gets the value of the paRes property.
      * 
      * @return
      *     possible object is
@@ -461,7 +476,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà paRes.
+     * Sets the value of the paRes property.
      * 
      * @param value
      *     allowed object is
@@ -473,7 +488,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà customInfo.
+     * Gets the value of the customInfo property.
      * 
      * @return
      *     possible object is
@@ -485,7 +500,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà customInfo.
+     * Sets the value of the customInfo property.
      * 
      * @param value
      *     allowed object is
@@ -497,7 +512,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà idea.
+     * Gets the value of the idea property.
      * 
      * @return
      *     possible object is
@@ -509,7 +524,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà idea.
+     * Sets the value of the idea property.
      * 
      * @param value
      *     allowed object is
@@ -521,7 +536,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà requestToken.
+     * Gets the value of the requestToken property.
      * 
      * @return
      *     possible object is
@@ -533,7 +548,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà requestToken.
+     * Sets the value of the requestToken property.
      * 
      * @param value
      *     allowed object is
@@ -545,7 +560,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà tokenValue.
+     * Gets the value of the tokenValue property.
      * 
      * @return
      *     possible object is
@@ -557,7 +572,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà tokenValue.
+     * Sets the value of the tokenValue property.
      * 
      * @param value
      *     allowed object is
@@ -569,7 +584,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà clientIP.
+     * Gets the value of the clientIP property.
      * 
      * @return
      *     possible object is
@@ -581,7 +596,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà clientIP.
+     * Sets the value of the clientIP property.
      * 
      * @param value
      *     allowed object is
@@ -593,7 +608,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà itemType.
+     * Gets the value of the itemType property.
      * 
      * @return
      *     possible object is
@@ -605,7 +620,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà itemType.
+     * Sets the value of the itemType property.
      * 
      * @param value
      *     allowed object is
@@ -617,7 +632,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà recurrent.
+     * Gets the value of the recurrent property.
      * 
      * @return
      *     possible object is
@@ -629,7 +644,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà recurrent.
+     * Sets the value of the recurrent property.
      * 
      * @param value
      *     allowed object is
@@ -641,7 +656,79 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà shippingDetails.
+     * Gets the value of the subMerchantId property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getSubMerchantId() {
+        return subMerchantId;
+    }
+
+    /**
+     * Sets the value of the subMerchantId property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setSubMerchantId(String value) {
+        this.subMerchantId = value;
+    }
+
+    /**
+     * Gets the value of the paymentTypes property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link PaymentTypes }
+     *     
+     */
+    public PaymentTypes getPaymentTypes() {
+        return paymentTypes;
+    }
+
+    /**
+     * Sets the value of the paymentTypes property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link PaymentTypes }
+     *     
+     */
+    public void setPaymentTypes(PaymentTypes value) {
+        this.paymentTypes = value;
+    }
+
+    /**
+     * Gets the value of the paymentDeviceDetails property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link PaymentDeviceDetails }
+     *     
+     */
+    public PaymentDeviceDetails getPaymentDeviceDetails() {
+        return paymentDeviceDetails;
+    }
+
+    /**
+     * Sets the value of the paymentDeviceDetails property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link PaymentDeviceDetails }
+     *     
+     */
+    public void setPaymentDeviceDetails(PaymentDeviceDetails value) {
+        this.paymentDeviceDetails = value;
+    }
+
+    /**
+     * Gets the value of the shippingDetails property.
      * 
      * @return
      *     possible object is
@@ -653,7 +740,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà shippingDetails.
+     * Sets the value of the shippingDetails property.
      * 
      * @param value
      *     allowed object is
@@ -665,7 +752,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà redFraudPrevention.
+     * Gets the value of the redFraudPrevention property.
      * 
      * @return
      *     possible object is
@@ -677,7 +764,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà redFraudPrevention.
+     * Sets the value of the redFraudPrevention property.
      * 
      * @param value
      *     allowed object is
@@ -689,7 +776,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà redCustomerInfo.
+     * Gets the value of the redCustomerInfo property.
      * 
      * @return
      *     possible object is
@@ -701,7 +788,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà redCustomerInfo.
+     * Sets the value of the redCustomerInfo property.
      * 
      * @param value
      *     allowed object is
@@ -713,7 +800,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà redShippingInfo.
+     * Gets the value of the redShippingInfo property.
      * 
      * @return
      *     possible object is
@@ -725,7 +812,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà redShippingInfo.
+     * Sets the value of the redShippingInfo property.
      * 
      * @param value
      *     allowed object is
@@ -737,7 +824,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà redBillingInfo.
+     * Gets the value of the redBillingInfo property.
      * 
      * @return
      *     possible object is
@@ -749,7 +836,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà redBillingInfo.
+     * Sets the value of the redBillingInfo property.
      * 
      * @param value
      *     allowed object is
@@ -761,7 +848,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà redCustomerData.
+     * Gets the value of the redCustomerData property.
      * 
      * @return
      *     possible object is
@@ -773,7 +860,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà redCustomerData.
+     * Sets the value of the redCustomerData property.
      * 
      * @param value
      *     allowed object is
@@ -785,7 +872,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà redCustomInfo.
+     * Gets the value of the redCustomInfo property.
      * 
      * @return
      *     possible object is
@@ -797,7 +884,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà redCustomInfo.
+     * Sets the value of the redCustomInfo property.
      * 
      * @param value
      *     allowed object is
@@ -809,7 +896,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà redItems.
+     * Gets the value of the redItems property.
      * 
      * @return
      *     possible object is
@@ -821,7 +908,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà redItems.
+     * Sets the value of the redItems property.
      * 
      * @param value
      *     allowed object is
@@ -833,7 +920,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà applePay.
+     * Gets the value of the applePay property.
      * 
      * @return
      *     possible object is
@@ -845,7 +932,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà applePay.
+     * Sets the value of the applePay property.
      * 
      * @param value
      *     allowed object is
@@ -857,7 +944,31 @@ public class CallPagamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà orderDetails.
+     * Gets the value of the cardReaderPayments property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link CardReaderPayments }
+     *     
+     */
+    public CardReaderPayments getCardReaderPayments() {
+        return cardReaderPayments;
+    }
+
+    /**
+     * Sets the value of the cardReaderPayments property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CardReaderPayments }
+     *     
+     */
+    public void setCardReaderPayments(CardReaderPayments value) {
+        this.cardReaderPayments = value;
+    }
+
+    /**
+     * Gets the value of the orderDetails property.
      * 
      * @return
      *     possible object is
@@ -869,7 +980,7 @@ public class CallPagamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà orderDetails.
+     * Sets the value of the orderDetails property.
      * 
      * @param value
      *     allowed object is
@@ -878,6 +989,30 @@ public class CallPagamS2S {
      */
     public void setOrderDetails(EcommGestpayPaymentDetails value) {
         this.orderDetails = value;
+    }
+
+    /**
+     * Gets the value of the apikey property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getApikey() {
+        return apikey;
+    }
+
+    /**
+     * Sets the value of the apikey property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setApikey(String value) {
+        this.apikey = value;
     }
 
 }

@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per RedBillingInfo complex type.
+ * <p>Java class for RedBillingInfo complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="RedBillingInfo">
@@ -88,7 +88,7 @@ public class RedBillingInfo {
     protected String billingMobilePhone;
 
     /**
-     * Recupera il valore della proprietà billingId.
+     * Gets the value of the billingId property.
      * 
      * @return
      *     possible object is
@@ -100,7 +100,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà billingId.
+     * Sets the value of the billingId property.
      * 
      * @param value
      *     allowed object is
@@ -112,7 +112,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà billingName.
+     * Gets the value of the billingName property.
      * 
      * @return
      *     possible object is
@@ -124,7 +124,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà billingName.
+     * Sets the value of the billingName property.
      * 
      * @param value
      *     allowed object is
@@ -136,7 +136,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà billingSurname.
+     * Gets the value of the billingSurname property.
      * 
      * @return
      *     possible object is
@@ -148,7 +148,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà billingSurname.
+     * Sets the value of the billingSurname property.
      * 
      * @param value
      *     allowed object is
@@ -160,7 +160,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà billingDateOfBirth.
+     * Gets the value of the billingDateOfBirth property.
      * 
      * @return
      *     possible object is
@@ -172,7 +172,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà billingDateOfBirth.
+     * Sets the value of the billingDateOfBirth property.
      * 
      * @param value
      *     allowed object is
@@ -184,7 +184,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà billingEmail.
+     * Gets the value of the billingEmail property.
      * 
      * @return
      *     possible object is
@@ -196,7 +196,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà billingEmail.
+     * Sets the value of the billingEmail property.
      * 
      * @param value
      *     allowed object is
@@ -208,7 +208,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà billingAddress.
+     * Gets the value of the billingAddress property.
      * 
      * @return
      *     possible object is
@@ -220,7 +220,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà billingAddress.
+     * Sets the value of the billingAddress property.
      * 
      * @param value
      *     allowed object is
@@ -232,7 +232,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà billingAddress2.
+     * Gets the value of the billingAddress2 property.
      * 
      * @return
      *     possible object is
@@ -244,7 +244,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà billingAddress2.
+     * Sets the value of the billingAddress2 property.
      * 
      * @param value
      *     allowed object is
@@ -256,7 +256,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà billingCity.
+     * Gets the value of the billingCity property.
      * 
      * @return
      *     possible object is
@@ -268,7 +268,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà billingCity.
+     * Sets the value of the billingCity property.
      * 
      * @param value
      *     allowed object is
@@ -280,7 +280,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà billingStateCode.
+     * Gets the value of the billingStateCode property.
      * 
      * @return
      *     possible object is
@@ -292,7 +292,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà billingStateCode.
+     * Sets the value of the billingStateCode property.
      * 
      * @param value
      *     allowed object is
@@ -304,7 +304,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà billingCountry.
+     * Gets the value of the billingCountry property.
      * 
      * @return
      *     possible object is
@@ -316,7 +316,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà billingCountry.
+     * Sets the value of the billingCountry property.
      * 
      * @param value
      *     allowed object is
@@ -328,7 +328,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà billingPostalCode.
+     * Gets the value of the billingPostalCode property.
      * 
      * @return
      *     possible object is
@@ -340,7 +340,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà billingPostalCode.
+     * Sets the value of the billingPostalCode property.
      * 
      * @param value
      *     allowed object is
@@ -352,7 +352,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà billingHomePhone.
+     * Gets the value of the billingHomePhone property.
      * 
      * @return
      *     possible object is
@@ -364,7 +364,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà billingHomePhone.
+     * Sets the value of the billingHomePhone property.
      * 
      * @param value
      *     allowed object is
@@ -376,7 +376,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà billingWorkPhone.
+     * Gets the value of the billingWorkPhone property.
      * 
      * @return
      *     possible object is
@@ -388,7 +388,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà billingWorkPhone.
+     * Sets the value of the billingWorkPhone property.
      * 
      * @param value
      *     allowed object is
@@ -400,7 +400,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Recupera il valore della proprietà billingMobilePhone.
+     * Gets the value of the billingMobilePhone property.
      * 
      * @return
      *     possible object is
@@ -412,7 +412,7 @@ public class RedBillingInfo {
     }
 
     /**
-     * Imposta il valore della proprietà billingMobilePhone.
+     * Sets the value of the billingMobilePhone property.
      * 
      * @param value
      *     allowed object is

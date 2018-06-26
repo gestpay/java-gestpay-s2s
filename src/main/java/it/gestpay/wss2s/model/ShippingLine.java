@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per ShippingLine complex type.
+ * <p>Java class for ShippingLine complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="ShippingLine">
@@ -44,7 +44,7 @@ public class ShippingLine {
     protected String code;
 
     /**
-     * Recupera il valore della proprietà price.
+     * Gets the value of the price property.
      * 
      * @return
      *     possible object is
@@ -56,7 +56,7 @@ public class ShippingLine {
     }
 
     /**
-     * Imposta il valore della proprietà price.
+     * Sets the value of the price property.
      * 
      * @param value
      *     allowed object is
@@ -68,7 +68,7 @@ public class ShippingLine {
     }
 
     /**
-     * Recupera il valore della proprietà title.
+     * Gets the value of the title property.
      * 
      * @return
      *     possible object is
@@ -80,7 +80,7 @@ public class ShippingLine {
     }
 
     /**
-     * Imposta il valore della proprietà title.
+     * Sets the value of the title property.
      * 
      * @param value
      *     allowed object is
@@ -92,7 +92,7 @@ public class ShippingLine {
     }
 
     /**
-     * Recupera il valore della proprietà code.
+     * Gets the value of the code property.
      * 
      * @return
      *     possible object is
@@ -104,7 +104,7 @@ public class ShippingLine {
     }
 
     /**
-     * Imposta il valore della proprietà code.
+     * Sets the value of the code property.
      * 
      * @param value
      *     allowed object is

@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -22,6 +22,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="bankTransactionId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="paramName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="paramValue" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="apikey" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,7 +37,8 @@ import javax.xml.bind.annotation.XmlType;
     "shopTransactionId",
     "bankTransactionId",
     "paramName",
-    "paramValue"
+    "paramValue",
+    "apikey"
 })
 @XmlRootElement(name = "CallUpdateCustomParamS2S")
 public class CallUpdateCustomParamS2S {
@@ -46,9 +48,10 @@ public class CallUpdateCustomParamS2S {
     protected String bankTransactionId;
     protected String paramName;
     protected String paramValue;
+    protected String apikey;
 
     /**
-     * Recupera il valore della proprietà shopLogin.
+     * Gets the value of the shopLogin property.
      * 
      * @return
      *     possible object is
@@ -60,7 +63,7 @@ public class CallUpdateCustomParamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà shopLogin.
+     * Sets the value of the shopLogin property.
      * 
      * @param value
      *     allowed object is
@@ -72,7 +75,7 @@ public class CallUpdateCustomParamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà shopTransactionId.
+     * Gets the value of the shopTransactionId property.
      * 
      * @return
      *     possible object is
@@ -84,7 +87,7 @@ public class CallUpdateCustomParamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà shopTransactionId.
+     * Sets the value of the shopTransactionId property.
      * 
      * @param value
      *     allowed object is
@@ -96,7 +99,7 @@ public class CallUpdateCustomParamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà bankTransactionId.
+     * Gets the value of the bankTransactionId property.
      * 
      * @return
      *     possible object is
@@ -108,7 +111,7 @@ public class CallUpdateCustomParamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà bankTransactionId.
+     * Sets the value of the bankTransactionId property.
      * 
      * @param value
      *     allowed object is
@@ -120,7 +123,7 @@ public class CallUpdateCustomParamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà paramName.
+     * Gets the value of the paramName property.
      * 
      * @return
      *     possible object is
@@ -132,7 +135,7 @@ public class CallUpdateCustomParamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà paramName.
+     * Sets the value of the paramName property.
      * 
      * @param value
      *     allowed object is
@@ -144,7 +147,7 @@ public class CallUpdateCustomParamS2S {
     }
 
     /**
-     * Recupera il valore della proprietà paramValue.
+     * Gets the value of the paramValue property.
      * 
      * @return
      *     possible object is
@@ -156,7 +159,7 @@ public class CallUpdateCustomParamS2S {
     }
 
     /**
-     * Imposta il valore della proprietà paramValue.
+     * Sets the value of the paramValue property.
      * 
      * @param value
      *     allowed object is
@@ -165,6 +168,30 @@ public class CallUpdateCustomParamS2S {
      */
     public void setParamValue(String value) {
         this.paramValue = value;
+    }
+
+    /**
+     * Gets the value of the apikey property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getApikey() {
+        return apikey;
+    }
+
+    /**
+     * Sets the value of the apikey property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setApikey(String value) {
+        this.apikey = value;
     }
 
 }

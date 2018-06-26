@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per RedCustomerInfo complex type.
+ * <p>Java class for RedCustomerInfo complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="RedCustomerInfo">
@@ -76,7 +76,7 @@ public class RedCustomerInfo {
     protected String customerPhone;
 
     /**
-     * Recupera il valore della proprietà customerTitle.
+     * Gets the value of the customerTitle property.
      * 
      * @return
      *     possible object is
@@ -88,7 +88,7 @@ public class RedCustomerInfo {
     }
 
     /**
-     * Imposta il valore della proprietà customerTitle.
+     * Sets the value of the customerTitle property.
      * 
      * @param value
      *     allowed object is
@@ -100,7 +100,7 @@ public class RedCustomerInfo {
     }
 
     /**
-     * Recupera il valore della proprietà customerName.
+     * Gets the value of the customerName property.
      * 
      * @return
      *     possible object is
@@ -112,7 +112,7 @@ public class RedCustomerInfo {
     }
 
     /**
-     * Imposta il valore della proprietà customerName.
+     * Sets the value of the customerName property.
      * 
      * @param value
      *     allowed object is
@@ -124,7 +124,7 @@ public class RedCustomerInfo {
     }
 
     /**
-     * Recupera il valore della proprietà customerSurname.
+     * Gets the value of the customerSurname property.
      * 
      * @return
      *     possible object is
@@ -136,7 +136,7 @@ public class RedCustomerInfo {
     }
 
     /**
-     * Imposta il valore della proprietà customerSurname.
+     * Sets the value of the customerSurname property.
      * 
      * @param value
      *     allowed object is
@@ -148,7 +148,7 @@ public class RedCustomerInfo {
     }
 
     /**
-     * Recupera il valore della proprietà customerEmail.
+     * Gets the value of the customerEmail property.
      * 
      * @return
      *     possible object is
@@ -160,7 +160,7 @@ public class RedCustomerInfo {
     }
 
     /**
-     * Imposta il valore della proprietà customerEmail.
+     * Sets the value of the customerEmail property.
      * 
      * @param value
      *     allowed object is
@@ -172,7 +172,7 @@ public class RedCustomerInfo {
     }
 
     /**
-     * Recupera il valore della proprietà customerAddress.
+     * Gets the value of the customerAddress property.
      * 
      * @return
      *     possible object is
@@ -184,7 +184,7 @@ public class RedCustomerInfo {
     }
 
     /**
-     * Imposta il valore della proprietà customerAddress.
+     * Sets the value of the customerAddress property.
      * 
      * @param value
      *     allowed object is
@@ -196,7 +196,7 @@ public class RedCustomerInfo {
     }
 
     /**
-     * Recupera il valore della proprietà customerAddress2.
+     * Gets the value of the customerAddress2 property.
      * 
      * @return
      *     possible object is
@@ -208,7 +208,7 @@ public class RedCustomerInfo {
     }
 
     /**
-     * Imposta il valore della proprietà customerAddress2.
+     * Sets the value of the customerAddress2 property.
      * 
      * @param value
      *     allowed object is
@@ -220,7 +220,7 @@ public class RedCustomerInfo {
     }
 
     /**
-     * Recupera il valore della proprietà customerCity.
+     * Gets the value of the customerCity property.
      * 
      * @return
      *     possible object is
@@ -232,7 +232,7 @@ public class RedCustomerInfo {
     }
 
     /**
-     * Imposta il valore della proprietà customerCity.
+     * Sets the value of the customerCity property.
      * 
      * @param value
      *     allowed object is
@@ -244,7 +244,7 @@ public class RedCustomerInfo {
     }
 
     /**
-     * Recupera il valore della proprietà customerStateCode.
+     * Gets the value of the customerStateCode property.
      * 
      * @return
      *     possible object is
@@ -256,7 +256,7 @@ public class RedCustomerInfo {
     }
 
     /**
-     * Imposta il valore della proprietà customerStateCode.
+     * Sets the value of the customerStateCode property.
      * 
      * @param value
      *     allowed object is
@@ -268,7 +268,7 @@ public class RedCustomerInfo {
     }
 
     /**
-     * Recupera il valore della proprietà customerCountry.
+     * Gets the value of the customerCountry property.
      * 
      * @return
      *     possible object is
@@ -280,7 +280,7 @@ public class RedCustomerInfo {
     }
 
     /**
-     * Imposta il valore della proprietà customerCountry.
+     * Sets the value of the customerCountry property.
      * 
      * @param value
      *     allowed object is
@@ -292,7 +292,7 @@ public class RedCustomerInfo {
     }
 
     /**
-     * Recupera il valore della proprietà customerPostalCode.
+     * Gets the value of the customerPostalCode property.
      * 
      * @return
      *     possible object is
@@ -304,7 +304,7 @@ public class RedCustomerInfo {
     }
 
     /**
-     * Imposta il valore della proprietà customerPostalCode.
+     * Sets the value of the customerPostalCode property.
      * 
      * @param value
      *     allowed object is
@@ -316,7 +316,7 @@ public class RedCustomerInfo {
     }
 
     /**
-     * Recupera il valore della proprietà customerPhone.
+     * Gets the value of the customerPhone property.
      * 
      * @return
      *     possible object is
@@ -328,7 +328,7 @@ public class RedCustomerInfo {
     }
 
     /**
-     * Imposta il valore della proprietà customerPhone.
+     * Sets the value of the customerPhone property.
      * 
      * @param value
      *     allowed object is

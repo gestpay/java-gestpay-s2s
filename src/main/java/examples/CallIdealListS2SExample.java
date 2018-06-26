@@ -18,7 +18,7 @@ import static util.Utils.showErrorMessage;
  * Api details: http://api.gestpay.it/#callideallists2s
  *
  */
-public class CallIdealListS2SExample {
+public class CallIdealListS2SExample { 
 
   private static Logger logger = Logger.getLogger("CallIdealListS2SExample");
 
@@ -34,9 +34,10 @@ public class CallIdealListS2SExample {
 
     //input data
     String shopLogin = "GESPAY65987";
+    String apiKey = null;
 
     //call Gestpay ...
-    CallIdealListS2SResponse.CallIdealListS2SResult callIdealListS2SResult = wSs2SSoap.callIdealListS2S(shopLogin);
+    CallIdealListS2SResponse.CallIdealListS2SResult callIdealListS2SResult = wSs2SSoap.callIdealListS2S(shopLogin, apiKey);
 
     if (callIdealListS2SResult.getContent() == null) {
       showErrorMessage();

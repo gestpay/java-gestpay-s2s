@@ -30,7 +30,7 @@ public class CallPagamS2SExample {
         "%1$tF %1$tT %4$s %2$s %5$s%6$s%n");
 
     //instantiate the webservice
-    WSs2S wSs2S = new WSs2S();
+    WSs2S wSs2S = new WSs2S(); 
     WSs2SSoap wSs2SSoap = wSs2S.getWSs2SSoap();
 
     //input data
@@ -57,14 +57,54 @@ public class CallPagamS2SExample {
     String clientIP = null;
     String itemType = null;
     String recurrent = null;
+    String subMerchantId = null;
+    PaymentTypes paymentTypes = null;
+    PaymentDeviceDetails paymentDeviceDetails = null;
     ShippingDetails shippingDetails = null;
     ApplePayRequest applePay = null;
     EcommGestpayPaymentDetails orderDetails = null;
 
+    //set a value if you use apiKey authentication
+    String apiKey = null; 
+
     //call Gestpay...
-    CallPagamS2SResponse.CallPagamS2SResult callPagamS2SResult = wSs2SSoap.callPagamS2S(shopLogin, uicCode, amount, shopTransactionId, cardNumber, expiryMonth, expiryYear,
-        buyerName, buyerEmail, languageId, cvv, null, transKey, paRes, customInfo, null, requestToken, tokenValue,
-        clientIP, itemType, recurrent, shippingDetails, null, null, null, null, null, null, null, applePay, orderDetails);
+    CallPagamS2SResponse.CallPagamS2SResult callPagamS2SResult = wSs2SSoap.callPagamS2S(
+      shopLogin, 
+      uicCode, 
+      amount, 
+      shopTransactionId, 
+      cardNumber, 
+      expiryMonth, 
+      expiryYear,
+      buyerName, 
+      buyerEmail, 
+      languageId, 
+      cvv, 
+      null, 
+      transKey, 
+      paRes, 
+      customInfo, 
+      null, 
+      requestToken, 
+      tokenValue,
+      clientIP, 
+      itemType, 
+      recurrent,
+      subMerchantId, 
+      paymentTypes,
+      paymentDeviceDetails,
+      shippingDetails, 
+      null, 
+      null, 
+      null, 
+      null, 
+      null, 
+      null, 
+      null, 
+      applePay, 
+      null, 
+      orderDetails, 
+      apiKey); 
 
     if (callPagamS2SResult.getContent() == null) {
       showErrorMessage();

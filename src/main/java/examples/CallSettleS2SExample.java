@@ -44,9 +44,12 @@ public class CallSettleS2SExample {
     String bankTransID = "137";
     FullFillmentDetails fullFillment = null;
 
+    //set a value if you use apiKey authentication
+    String apiKey = null; 
+
     //call Gestpay ...
     CallSettleS2SResponse.CallSettleS2SResult callSettleS2SResult = wSs2SSoap.callSettleS2S(shopLogin, uicCode, amount,
-        shopTransID, bankTransID, fullFillment);
+        shopTransID, bankTransID, fullFillment, apiKey, null);
 
     if (callSettleS2SResult.getContent() == null) {
       showErrorMessage();

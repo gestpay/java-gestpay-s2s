@@ -38,9 +38,12 @@ public class CallDeleteS2SExample {
     String bankTransactionId = "137";
     String cancelReason = "buyer wants his money back";
 
+    //set a value if you use apiKey authentication
+    String apiKey = null; 
+
     //call Gestpay ...
     CallDeleteS2SResponse.CallDeleteS2SResult callDeleteS2SResult = wSs2SSoap.callDeleteS2S(shopLogin,
-        shopTransactionId, bankTransactionId, cancelReason);
+        shopTransactionId, bankTransactionId, cancelReason, apiKey, null); 
 
     if (callDeleteS2SResult.getContent() == null) {
       showErrorMessage();

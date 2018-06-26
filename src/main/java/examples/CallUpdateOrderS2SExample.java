@@ -41,9 +41,12 @@ public class CallUpdateOrderS2SExample {
     orderDetails.getCustomerDetail().setFirstName("Albert");
     orderDetails.getCustomerDetail().setLastname("Einstein");
 
+    //set a value if you use apiKey authentication
+    String apiKey = null; 
+
     //call Gestpay ...
     CallUpdateOrderS2SResponse.CallUpdateOrderS2SResult callUpdateOrderS2SResult = wSs2SSoap.callUpdateOrderS2S(
-        shopLogin, shopTransactionId, bankTransactionId, orderDetails);
+        shopLogin, shopTransactionId, bankTransactionId, orderDetails, apiKey);
 
     if (callUpdateOrderS2SResult.getContent() == null) {
       showErrorMessage();

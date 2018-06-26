@@ -36,9 +36,12 @@ public class CallDeleteTokenS2SExample {
     String shopLogin = "GESPAY65987";
     String tokenValue = "54L76F8OSOAK1018";
 
+    //set a value if you use apiKey authentication
+    String apiKey = null; 
+
     //call Gestpay ...
     CallDeleteTokenS2SResponse.CallDeleteTokenS2SResult callDeleteTokenS2SResult = wSs2SSoap.callDeleteTokenS2S(
-        tokenValue, shopLogin);
+        tokenValue, shopLogin, apiKey);
 
     if (callDeleteTokenS2SResult.getContent() == null) {
       showErrorMessage();

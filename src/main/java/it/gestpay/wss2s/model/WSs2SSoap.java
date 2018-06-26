@@ -29,6 +29,8 @@ public interface WSs2SSoap {
      * @param shopTransactionId
      * @param chargeBackFraud
      * @param amount
+     * @param paymentDeviceDetails
+     * @param apikey
      * @param uicCode
      * @param refundReason
      * @param orderDetail
@@ -56,12 +58,18 @@ public interface WSs2SSoap {
         @WebParam(name = "RefundReason", targetNamespace = "https://ecomms2s.sella.it/")
         String refundReason,
         @WebParam(name = "chargeBackFraud", targetNamespace = "https://ecomms2s.sella.it/")
-        String chargeBackFraud);
+        String chargeBackFraud,
+        @WebParam(name = "apikey", targetNamespace = "https://ecomms2s.sella.it/")
+        String apikey,
+        @WebParam(name = "paymentDeviceDetails", targetNamespace = "https://ecomms2s.sella.it/")
+        PaymentDeviceDetails paymentDeviceDetails);
 
     /**
      * 
      * @param bankTransactionId
      * @param shopTransactionId
+     * @param paymentDeviceDetails
+     * @param apikey
      * @param shopLogin
      * @return
      *     returns it.gestpay.wss2s.model.CallReadTrxS2SResponse.CallReadTrxS2SResult
@@ -76,7 +84,11 @@ public interface WSs2SSoap {
         @WebParam(name = "shopTransactionId", targetNamespace = "https://ecomms2s.sella.it/")
         String shopTransactionId,
         @WebParam(name = "bankTransactionId", targetNamespace = "https://ecomms2s.sella.it/")
-        String bankTransactionId);
+        String bankTransactionId,
+        @WebParam(name = "apikey", targetNamespace = "https://ecomms2s.sella.it/")
+        String apikey,
+        @WebParam(name = "paymentDeviceDetails", targetNamespace = "https://ecomms2s.sella.it/")
+        PaymentDeviceDetails paymentDeviceDetails);
 
     /**
      * 
@@ -90,16 +102,21 @@ public interface WSs2SSoap {
      * @param expiryYear
      * @param customInfo
      * @param redCustomerData
+     * @param cardReaderPayments
      * @param transKey
      * @param shopTransactionId
      * @param min
      * @param shippingDetails
      * @param redItems
      * @param clientIP
+     * @param paymentTypes
      * @param recurrent
      * @param shopLogin
      * @param amount
      * @param cvv
+     * @param subMerchantId
+     * @param paymentDeviceDetails
+     * @param apikey
      * @param uicCode
      * @param applePay
      * @param expiryMonth
@@ -161,6 +178,12 @@ public interface WSs2SSoap {
         String itemType,
         @WebParam(name = "recurrent", targetNamespace = "https://ecomms2s.sella.it/")
         String recurrent,
+        @WebParam(name = "subMerchantId", targetNamespace = "https://ecomms2s.sella.it/")
+        String subMerchantId,
+        @WebParam(name = "paymentTypes", targetNamespace = "https://ecomms2s.sella.it/")
+        PaymentTypes paymentTypes,
+        @WebParam(name = "paymentDeviceDetails", targetNamespace = "https://ecomms2s.sella.it/")
+        PaymentDeviceDetails paymentDeviceDetails,
         @WebParam(name = "shippingDetails", targetNamespace = "https://ecomms2s.sella.it/")
         ShippingDetails shippingDetails,
         @WebParam(name = "redFraudPrevention", targetNamespace = "https://ecomms2s.sella.it/")
@@ -179,13 +202,19 @@ public interface WSs2SSoap {
         RedItems redItems,
         @WebParam(name = "applePay", targetNamespace = "https://ecomms2s.sella.it/")
         ApplePayRequest applePay,
+        @WebParam(name = "cardReaderPayments", targetNamespace = "https://ecomms2s.sella.it/")
+        CardReaderPayments cardReaderPayments,
         @WebParam(name = "OrderDetails", targetNamespace = "https://ecomms2s.sella.it/")
-        EcommGestpayPaymentDetails orderDetails);
+        EcommGestpayPaymentDetails orderDetails,
+        @WebParam(name = "apikey", targetNamespace = "https://ecomms2s.sella.it/")
+        String apikey);
 
     /**
      * 
      * @param bankTransactionId
      * @param shopTransactionId
+     * @param paymentDeviceDetails
+     * @param apikey
      * @param cancelReason
      * @param shopLogin
      * @return
@@ -203,12 +232,18 @@ public interface WSs2SSoap {
         @WebParam(name = "bankTransactionId", targetNamespace = "https://ecomms2s.sella.it/")
         String bankTransactionId,
         @WebParam(name = "CancelReason", targetNamespace = "https://ecomms2s.sella.it/")
-        String cancelReason);
+        String cancelReason,
+        @WebParam(name = "apikey", targetNamespace = "https://ecomms2s.sella.it/")
+        String apikey,
+        @WebParam(name = "paymentDeviceDetails", targetNamespace = "https://ecomms2s.sella.it/")
+        PaymentDeviceDetails paymentDeviceDetails);
 
     /**
      * 
      * @param amount
+     * @param paymentDeviceDetails
      * @param bankTransID
+     * @param apikey
      * @param uicCode
      * @param fullFillment
      * @param shopTransID
@@ -232,13 +267,18 @@ public interface WSs2SSoap {
         @WebParam(name = "bankTransID", targetNamespace = "https://ecomms2s.sella.it/")
         String bankTransID,
         @WebParam(name = "FullFillment", targetNamespace = "https://ecomms2s.sella.it/")
-        FullFillmentDetails fullFillment);
+        FullFillmentDetails fullFillment,
+        @WebParam(name = "apikey", targetNamespace = "https://ecomms2s.sella.it/")
+        String apikey,
+        @WebParam(name = "paymentDeviceDetails", targetNamespace = "https://ecomms2s.sella.it/")
+        PaymentDeviceDetails paymentDeviceDetails);
 
     /**
      * 
      * @param shopTransactionId
      * @param expMonth
      * @param cvv2
+     * @param apikey
      * @param expYear
      * @param shopLogin
      * @param cardNumber
@@ -261,13 +301,16 @@ public interface WSs2SSoap {
         @WebParam(name = "expYear", targetNamespace = "https://ecomms2s.sella.it/")
         String expYear,
         @WebParam(name = "CVV2", targetNamespace = "https://ecomms2s.sella.it/")
-        String cvv2);
+        String cvv2,
+        @WebParam(name = "apikey", targetNamespace = "https://ecomms2s.sella.it/")
+        String apikey);
 
     /**
      * 
      * @param shopTransactionId
      * @param expMonth
      * @param cvv2
+     * @param apikey
      * @param expYear
      * @param withAuth
      * @param tokenValue
@@ -296,7 +339,9 @@ public interface WSs2SSoap {
         @WebParam(name = "withAuth", targetNamespace = "https://ecomms2s.sella.it/")
         String withAuth,
         @WebParam(name = "tokenValue", targetNamespace = "https://ecomms2s.sella.it/")
-        String tokenValue);
+        String tokenValue,
+        @WebParam(name = "apikey", targetNamespace = "https://ecomms2s.sella.it/")
+        String apikey);
 
     /**
      * 
@@ -312,10 +357,13 @@ public interface WSs2SSoap {
     /**
      * 
      * @param cvv
+     * @param apikey
      * @param expiryMonth
+     * @param description
      * @param requestToken
      * @param expiryYear
      * @param withAuth
+     * @param originalId
      * @param shopLogin
      * @param cardNumber
      * @return
@@ -339,10 +387,17 @@ public interface WSs2SSoap {
         @WebParam(name = "cvv", targetNamespace = "https://ecomms2s.sella.it/")
         String cvv,
         @WebParam(name = "withAuth", targetNamespace = "https://ecomms2s.sella.it/")
-        String withAuth);
+        String withAuth,
+        @WebParam(name = "originalId", targetNamespace = "https://ecomms2s.sella.it/")
+        String originalId,
+        @WebParam(name = "description", targetNamespace = "https://ecomms2s.sella.it/")
+        String description,
+        @WebParam(name = "apikey", targetNamespace = "https://ecomms2s.sella.it/")
+        String apikey);
 
     /**
      * 
+     * @param apikey
      * @param tokenValue
      * @param shopLogin
      * @return
@@ -356,10 +411,13 @@ public interface WSs2SSoap {
         @WebParam(name = "tokenValue", targetNamespace = "https://ecomms2s.sella.it/")
         String tokenValue,
         @WebParam(name = "shopLogin", targetNamespace = "https://ecomms2s.sella.it/")
-        String shopLogin);
+        String shopLogin,
+        @WebParam(name = "apikey", targetNamespace = "https://ecomms2s.sella.it/")
+        String apikey);
 
     /**
      * 
+     * @param apikey
      * @param expiryMonth
      * @param expiryYear
      * @param shopLogin
@@ -382,10 +440,13 @@ public interface WSs2SSoap {
         @WebParam(name = "expiryYear", targetNamespace = "https://ecomms2s.sella.it/")
         String expiryYear,
         @WebParam(name = "withAut", targetNamespace = "https://ecomms2s.sella.it/")
-        String withAut);
+        String withAut,
+        @WebParam(name = "apikey", targetNamespace = "https://ecomms2s.sella.it/")
+        String apikey);
 
     /**
      * 
+     * @param apikey
      * @param shopLogin
      * @return
      *     returns it.gestpay.wss2s.model.CallIdealListS2SResponse.CallIdealListS2SResult
@@ -396,10 +457,13 @@ public interface WSs2SSoap {
     @ResponseWrapper(localName = "CallIdealListS2SResponse", targetNamespace = "https://ecomms2s.sella.it/", className = "it.gestpay.wss2s.model.CallIdealListS2SResponse")
     public it.gestpay.wss2s.model.CallIdealListS2SResponse.CallIdealListS2SResult callIdealListS2S(
         @WebParam(name = "shopLogin", targetNamespace = "https://ecomms2s.sella.it/")
-        String shopLogin);
+        String shopLogin,
+        @WebParam(name = "apikey", targetNamespace = "https://ecomms2s.sella.it/")
+        String apikey);
 
     /**
      * 
+     * @param apikey
      * @param languageId
      * @param shopLogin
      * @return
@@ -413,12 +477,15 @@ public interface WSs2SSoap {
         @WebParam(name = "shopLogin", targetNamespace = "https://ecomms2s.sella.it/")
         String shopLogin,
         @WebParam(name = "languageId", targetNamespace = "https://ecomms2s.sella.it/")
-        String languageId);
+        String languageId,
+        @WebParam(name = "apikey", targetNamespace = "https://ecomms2s.sella.it/")
+        String apikey);
 
     /**
      * 
      * @param bankTransactionId
      * @param shopTransactionId
+     * @param apikey
      * @param paramName
      * @param shopLogin
      * @param paramValue
@@ -439,13 +506,16 @@ public interface WSs2SSoap {
         @WebParam(name = "paramName", targetNamespace = "https://ecomms2s.sella.it/")
         String paramName,
         @WebParam(name = "paramValue", targetNamespace = "https://ecomms2s.sella.it/")
-        String paramValue);
+        String paramValue,
+        @WebParam(name = "apikey", targetNamespace = "https://ecomms2s.sella.it/")
+        String apikey);
 
     /**
      * 
      * @param bankTransactionId
      * @param shopTransactionId
      * @param orderDetails
+     * @param apikey
      * @param shopLogin
      * @return
      *     returns it.gestpay.wss2s.model.CallUpdateOrderS2SResponse.CallUpdateOrderS2SResult
@@ -462,11 +532,14 @@ public interface WSs2SSoap {
         @WebParam(name = "bankTransactionId", targetNamespace = "https://ecomms2s.sella.it/")
         String bankTransactionId,
         @WebParam(name = "OrderDetails", targetNamespace = "https://ecomms2s.sella.it/")
-        EcommGestpayPaymentDetails orderDetails);
+        EcommGestpayPaymentDetails orderDetails,
+        @WebParam(name = "apikey", targetNamespace = "https://ecomms2s.sella.it/")
+        String apikey);
 
     /**
      * 
      * @param numericIsoCode
+     * @param apikey
      * @param uicCode
      * @param isoCode
      * @param shopLogin
@@ -485,6 +558,22 @@ public interface WSs2SSoap {
         @WebParam(name = "isoCode", targetNamespace = "https://ecomms2s.sella.it/")
         String isoCode,
         @WebParam(name = "numericIsoCode", targetNamespace = "https://ecomms2s.sella.it/")
-        String numericIsoCode);
+        String numericIsoCode,
+        @WebParam(name = "apikey", targetNamespace = "https://ecomms2s.sella.it/")
+        String apikey);
+
+    /**
+     * 
+     * @param terminalId
+     * @return
+     *     returns it.gestpay.wss2s.model.CallDeviceActivationResponse.CallDeviceActivationResult
+     */
+    @WebMethod(action = "https://ecomms2s.sella.it/callDeviceActivation")
+    @WebResult(name = "callDeviceActivationResult", targetNamespace = "https://ecomms2s.sella.it/")
+    @RequestWrapper(localName = "callDeviceActivation", targetNamespace = "https://ecomms2s.sella.it/", className = "it.gestpay.wss2s.model.CallDeviceActivation")
+    @ResponseWrapper(localName = "callDeviceActivationResponse", targetNamespace = "https://ecomms2s.sella.it/", className = "it.gestpay.wss2s.model.CallDeviceActivationResponse")
+    public it.gestpay.wss2s.model.CallDeviceActivationResponse.CallDeviceActivationResult callDeviceActivation(
+        @WebParam(name = "terminalId", targetNamespace = "https://ecomms2s.sella.it/")
+        String terminalId);
 
 }

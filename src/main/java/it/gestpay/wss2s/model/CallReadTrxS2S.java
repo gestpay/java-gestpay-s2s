@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -20,6 +20,8 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="shopLogin" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="shopTransactionId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="bankTransactionId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="apikey" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="paymentDeviceDetails" type="{https://ecomms2s.sella.it/}PaymentDeviceDetails" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -32,7 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "", propOrder = {
     "shopLogin",
     "shopTransactionId",
-    "bankTransactionId"
+    "bankTransactionId",
+    "apikey",
+    "paymentDeviceDetails"
 })
 @XmlRootElement(name = "callReadTrxS2S")
 public class CallReadTrxS2S {
@@ -40,9 +44,11 @@ public class CallReadTrxS2S {
     protected String shopLogin;
     protected String shopTransactionId;
     protected String bankTransactionId;
+    protected String apikey;
+    protected PaymentDeviceDetails paymentDeviceDetails;
 
     /**
-     * Recupera il valore della proprietà shopLogin.
+     * Gets the value of the shopLogin property.
      * 
      * @return
      *     possible object is
@@ -54,7 +60,7 @@ public class CallReadTrxS2S {
     }
 
     /**
-     * Imposta il valore della proprietà shopLogin.
+     * Sets the value of the shopLogin property.
      * 
      * @param value
      *     allowed object is
@@ -66,7 +72,7 @@ public class CallReadTrxS2S {
     }
 
     /**
-     * Recupera il valore della proprietà shopTransactionId.
+     * Gets the value of the shopTransactionId property.
      * 
      * @return
      *     possible object is
@@ -78,7 +84,7 @@ public class CallReadTrxS2S {
     }
 
     /**
-     * Imposta il valore della proprietà shopTransactionId.
+     * Sets the value of the shopTransactionId property.
      * 
      * @param value
      *     allowed object is
@@ -90,7 +96,7 @@ public class CallReadTrxS2S {
     }
 
     /**
-     * Recupera il valore della proprietà bankTransactionId.
+     * Gets the value of the bankTransactionId property.
      * 
      * @return
      *     possible object is
@@ -102,7 +108,7 @@ public class CallReadTrxS2S {
     }
 
     /**
-     * Imposta il valore della proprietà bankTransactionId.
+     * Sets the value of the bankTransactionId property.
      * 
      * @param value
      *     allowed object is
@@ -111,6 +117,54 @@ public class CallReadTrxS2S {
      */
     public void setBankTransactionId(String value) {
         this.bankTransactionId = value;
+    }
+
+    /**
+     * Gets the value of the apikey property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getApikey() {
+        return apikey;
+    }
+
+    /**
+     * Sets the value of the apikey property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setApikey(String value) {
+        this.apikey = value;
+    }
+
+    /**
+     * Gets the value of the paymentDeviceDetails property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link PaymentDeviceDetails }
+     *     
+     */
+    public PaymentDeviceDetails getPaymentDeviceDetails() {
+        return paymentDeviceDetails;
+    }
+
+    /**
+     * Sets the value of the paymentDeviceDetails property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link PaymentDeviceDetails }
+     *     
+     */
+    public void setPaymentDeviceDetails(PaymentDeviceDetails value) {
+        this.paymentDeviceDetails = value;
     }
 
 }

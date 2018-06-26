@@ -8,16 +8,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for RefundProductDetail complex type.
+ * <p>Java class for PaymentDeviceDetails complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="RefundProductDetail">
+ * &lt;complexType name="PaymentDeviceDetails">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="ProductDetails" type="{https://ecomms2s.sella.it/}ArrayOfProductDetail" minOccurs="0"/>
+ *         &lt;element name="TerminalId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -27,36 +27,36 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "RefundProductDetail", propOrder = {
-    "productDetails"
+@XmlType(name = "PaymentDeviceDetails", propOrder = {
+    "terminalId"
 })
-public class RefundProductDetail {
+public class PaymentDeviceDetails {
 
-    @XmlElement(name = "ProductDetails")
-    protected ArrayOfProductDetail productDetails;
+    @XmlElement(name = "TerminalId")
+    protected String terminalId;
 
     /**
-     * Gets the value of the productDetails property.
+     * Gets the value of the terminalId property.
      * 
      * @return
      *     possible object is
-     *     {@link ArrayOfProductDetail }
+     *     {@link String }
      *     
      */
-    public ArrayOfProductDetail getProductDetails() {
-        return productDetails;
+    public String getTerminalId() {
+        return terminalId;
     }
 
     /**
-     * Sets the value of the productDetails property.
+     * Sets the value of the terminalId property.
      * 
      * @param value
      *     allowed object is
-     *     {@link ArrayOfProductDetail }
+     *     {@link String }
      *     
      */
-    public void setProductDetails(ArrayOfProductDetail value) {
-        this.productDetails = value;
+    public void setTerminalId(String value) {
+        this.terminalId = value;
     }
 
 }

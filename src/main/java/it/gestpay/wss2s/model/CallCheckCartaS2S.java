@@ -9,9 +9,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -26,6 +26,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="CVV2" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="withAuth" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="tokenValue" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="apikey" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -43,7 +44,8 @@ import javax.xml.bind.annotation.XmlType;
     "expYear",
     "cvv2",
     "withAuth",
-    "tokenValue"
+    "tokenValue",
+    "apikey"
 })
 @XmlRootElement(name = "callCheckCartaS2S")
 public class CallCheckCartaS2S {
@@ -57,9 +59,10 @@ public class CallCheckCartaS2S {
     protected String cvv2;
     protected String withAuth;
     protected String tokenValue;
+    protected String apikey;
 
     /**
-     * Recupera il valore della proprietà shopLogin.
+     * Gets the value of the shopLogin property.
      * 
      * @return
      *     possible object is
@@ -71,7 +74,7 @@ public class CallCheckCartaS2S {
     }
 
     /**
-     * Imposta il valore della proprietà shopLogin.
+     * Sets the value of the shopLogin property.
      * 
      * @param value
      *     allowed object is
@@ -83,7 +86,7 @@ public class CallCheckCartaS2S {
     }
 
     /**
-     * Recupera il valore della proprietà shopTransactionId.
+     * Gets the value of the shopTransactionId property.
      * 
      * @return
      *     possible object is
@@ -95,7 +98,7 @@ public class CallCheckCartaS2S {
     }
 
     /**
-     * Imposta il valore della proprietà shopTransactionId.
+     * Sets the value of the shopTransactionId property.
      * 
      * @param value
      *     allowed object is
@@ -107,7 +110,7 @@ public class CallCheckCartaS2S {
     }
 
     /**
-     * Recupera il valore della proprietà cardNumber.
+     * Gets the value of the cardNumber property.
      * 
      * @return
      *     possible object is
@@ -119,7 +122,7 @@ public class CallCheckCartaS2S {
     }
 
     /**
-     * Imposta il valore della proprietà cardNumber.
+     * Sets the value of the cardNumber property.
      * 
      * @param value
      *     allowed object is
@@ -131,7 +134,7 @@ public class CallCheckCartaS2S {
     }
 
     /**
-     * Recupera il valore della proprietà expMonth.
+     * Gets the value of the expMonth property.
      * 
      * @return
      *     possible object is
@@ -143,7 +146,7 @@ public class CallCheckCartaS2S {
     }
 
     /**
-     * Imposta il valore della proprietà expMonth.
+     * Sets the value of the expMonth property.
      * 
      * @param value
      *     allowed object is
@@ -155,7 +158,7 @@ public class CallCheckCartaS2S {
     }
 
     /**
-     * Recupera il valore della proprietà expYear.
+     * Gets the value of the expYear property.
      * 
      * @return
      *     possible object is
@@ -167,7 +170,7 @@ public class CallCheckCartaS2S {
     }
 
     /**
-     * Imposta il valore della proprietà expYear.
+     * Sets the value of the expYear property.
      * 
      * @param value
      *     allowed object is
@@ -179,7 +182,7 @@ public class CallCheckCartaS2S {
     }
 
     /**
-     * Recupera il valore della proprietà cvv2.
+     * Gets the value of the cvv2 property.
      * 
      * @return
      *     possible object is
@@ -191,7 +194,7 @@ public class CallCheckCartaS2S {
     }
 
     /**
-     * Imposta il valore della proprietà cvv2.
+     * Sets the value of the cvv2 property.
      * 
      * @param value
      *     allowed object is
@@ -203,7 +206,7 @@ public class CallCheckCartaS2S {
     }
 
     /**
-     * Recupera il valore della proprietà withAuth.
+     * Gets the value of the withAuth property.
      * 
      * @return
      *     possible object is
@@ -215,7 +218,7 @@ public class CallCheckCartaS2S {
     }
 
     /**
-     * Imposta il valore della proprietà withAuth.
+     * Sets the value of the withAuth property.
      * 
      * @param value
      *     allowed object is
@@ -227,7 +230,7 @@ public class CallCheckCartaS2S {
     }
 
     /**
-     * Recupera il valore della proprietà tokenValue.
+     * Gets the value of the tokenValue property.
      * 
      * @return
      *     possible object is
@@ -239,7 +242,7 @@ public class CallCheckCartaS2S {
     }
 
     /**
-     * Imposta il valore della proprietà tokenValue.
+     * Sets the value of the tokenValue property.
      * 
      * @param value
      *     allowed object is
@@ -248,6 +251,30 @@ public class CallCheckCartaS2S {
      */
     public void setTokenValue(String value) {
         this.tokenValue = value;
+    }
+
+    /**
+     * Gets the value of the apikey property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getApikey() {
+        return apikey;
+    }
+
+    /**
+     * Sets the value of the apikey property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setApikey(String value) {
+        this.apikey = value;
     }
 
 }

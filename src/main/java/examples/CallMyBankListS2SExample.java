@@ -36,8 +36,11 @@ public class CallMyBankListS2SExample {
     String shopLogin = "GESPAY65987";
     String languageId = "1";
 
+    //set a value if you use apiKey authentication
+    String apiKey = null; 
+
     //call Gestpay ...
-    CallMyBankListS2SResponse.CallMyBankListS2SResult callMyBankListS2SResult = wSs2SSoap.callMyBankListS2S(shopLogin, languageId);
+    CallMyBankListS2SResponse.CallMyBankListS2SResult callMyBankListS2SResult = wSs2SSoap.callMyBankListS2S(shopLogin, languageId, apiKey);
 
     if (callMyBankListS2SResult.getContent() == null) {
       showErrorMessage();

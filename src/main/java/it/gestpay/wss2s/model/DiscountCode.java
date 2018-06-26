@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per DiscountCode complex type.
+ * <p>Java class for DiscountCode complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="DiscountCode">
@@ -40,7 +40,7 @@ public class DiscountCode {
     protected String code;
 
     /**
-     * Recupera il valore della proprietà amount.
+     * Gets the value of the amount property.
      * 
      * @return
      *     possible object is
@@ -52,7 +52,7 @@ public class DiscountCode {
     }
 
     /**
-     * Imposta il valore della proprietà amount.
+     * Sets the value of the amount property.
      * 
      * @param value
      *     allowed object is
@@ -64,7 +64,7 @@ public class DiscountCode {
     }
 
     /**
-     * Recupera il valore della proprietà code.
+     * Gets the value of the code property.
      * 
      * @return
      *     possible object is
@@ -76,7 +76,7 @@ public class DiscountCode {
     }
 
     /**
-     * Imposta il valore della proprietà code.
+     * Sets the value of the code property.
      * 
      * @param value
      *     allowed object is

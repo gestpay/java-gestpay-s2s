@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per ShippingDetails complex type.
+ * <p>Java class for ShippingDetails complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="ShippingDetails">
@@ -52,7 +52,7 @@ public class ShippingDetails {
     protected String shipToStreet2;
 
     /**
-     * Recupera il valore della proprietà shipToName.
+     * Gets the value of the shipToName property.
      * 
      * @return
      *     possible object is
@@ -64,7 +64,7 @@ public class ShippingDetails {
     }
 
     /**
-     * Imposta il valore della proprietà shipToName.
+     * Sets the value of the shipToName property.
      * 
      * @param value
      *     allowed object is
@@ -76,7 +76,7 @@ public class ShippingDetails {
     }
 
     /**
-     * Recupera il valore della proprietà shipToStreet.
+     * Gets the value of the shipToStreet property.
      * 
      * @return
      *     possible object is
@@ -88,7 +88,7 @@ public class ShippingDetails {
     }
 
     /**
-     * Imposta il valore della proprietà shipToStreet.
+     * Sets the value of the shipToStreet property.
      * 
      * @param value
      *     allowed object is
@@ -100,7 +100,7 @@ public class ShippingDetails {
     }
 
     /**
-     * Recupera il valore della proprietà shipToCity.
+     * Gets the value of the shipToCity property.
      * 
      * @return
      *     possible object is
@@ -112,7 +112,7 @@ public class ShippingDetails {
     }
 
     /**
-     * Imposta il valore della proprietà shipToCity.
+     * Sets the value of the shipToCity property.
      * 
      * @param value
      *     allowed object is
@@ -124,7 +124,7 @@ public class ShippingDetails {
     }
 
     /**
-     * Recupera il valore della proprietà shipToState.
+     * Gets the value of the shipToState property.
      * 
      * @return
      *     possible object is
@@ -136,7 +136,7 @@ public class ShippingDetails {
     }
 
     /**
-     * Imposta il valore della proprietà shipToState.
+     * Sets the value of the shipToState property.
      * 
      * @param value
      *     allowed object is
@@ -148,7 +148,7 @@ public class ShippingDetails {
     }
 
     /**
-     * Recupera il valore della proprietà shipToCountryCode.
+     * Gets the value of the shipToCountryCode property.
      * 
      * @return
      *     possible object is
@@ -160,7 +160,7 @@ public class ShippingDetails {
     }
 
     /**
-     * Imposta il valore della proprietà shipToCountryCode.
+     * Sets the value of the shipToCountryCode property.
      * 
      * @param value
      *     allowed object is
@@ -172,7 +172,7 @@ public class ShippingDetails {
     }
 
     /**
-     * Recupera il valore della proprietà shipToZip.
+     * Gets the value of the shipToZip property.
      * 
      * @return
      *     possible object is
@@ -184,7 +184,7 @@ public class ShippingDetails {
     }
 
     /**
-     * Imposta il valore della proprietà shipToZip.
+     * Sets the value of the shipToZip property.
      * 
      * @param value
      *     allowed object is
@@ -196,7 +196,7 @@ public class ShippingDetails {
     }
 
     /**
-     * Recupera il valore della proprietà shipToStreet2.
+     * Gets the value of the shipToStreet2 property.
      * 
      * @return
      *     possible object is
@@ -208,7 +208,7 @@ public class ShippingDetails {
     }
 
     /**
-     * Imposta il valore della proprietà shipToStreet2.
+     * Sets the value of the shipToStreet2 property.
      * 
      * @param value
      *     allowed object is

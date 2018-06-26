@@ -13,9 +13,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -52,7 +52,7 @@ public class CallRequestTokenS2SResponse {
     protected CallRequestTokenS2SResponse.CallRequestTokenS2SResult callRequestTokenS2SResult;
 
     /**
-     * Recupera il valore della proprietà callRequestTokenS2SResult.
+     * Gets the value of the callRequestTokenS2SResult property.
      * 
      * @return
      *     possible object is
@@ -64,7 +64,7 @@ public class CallRequestTokenS2SResponse {
     }
 
     /**
-     * Imposta il valore della proprietà callRequestTokenS2SResult.
+     * Sets the value of the callRequestTokenS2SResult property.
      * 
      * @param value
      *     allowed object is
@@ -77,9 +77,9 @@ public class CallRequestTokenS2SResponse {
 
 
     /**
-     * <p>Classe Java per anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType>

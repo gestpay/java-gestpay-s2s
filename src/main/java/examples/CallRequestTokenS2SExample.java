@@ -43,9 +43,12 @@ public class CallRequestTokenS2SExample {
     String expYear = "17";
     String cvv = "999";
 
+    //set a value if you use apiKey authentication
+    String apiKey = null; 
+
     //call Gestpay ...
     CallRequestTokenS2SResponse.CallRequestTokenS2SResult callRequestTokenS2SResult = wSs2SSoap.callRequestTokenS2S(shopLogin,
-        requestToken, cardNumber, expMonth, expYear, cvv, withAuth);
+        requestToken, cardNumber, expMonth, expYear, cvv, withAuth, null, null, apiKey);
 
     if (callRequestTokenS2SResult.getContent() == null) {
       showErrorMessage();

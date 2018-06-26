@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per ProductDetail complex type.
+ * <p>Java class for ProductDetail complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="ProductDetail">
@@ -100,7 +100,7 @@ public class ProductDetail {
     protected String deliveryAt;
 
     /**
-     * Recupera il valore della proprietà productCode.
+     * Gets the value of the productCode property.
      * 
      * @return
      *     possible object is
@@ -112,7 +112,7 @@ public class ProductDetail {
     }
 
     /**
-     * Imposta il valore della proprietà productCode.
+     * Sets the value of the productCode property.
      * 
      * @param value
      *     allowed object is
@@ -124,7 +124,7 @@ public class ProductDetail {
     }
 
     /**
-     * Recupera il valore della proprietà sku.
+     * Gets the value of the sku property.
      * 
      * @return
      *     possible object is
@@ -136,7 +136,7 @@ public class ProductDetail {
     }
 
     /**
-     * Imposta il valore della proprietà sku.
+     * Sets the value of the sku property.
      * 
      * @param value
      *     allowed object is
@@ -148,7 +148,7 @@ public class ProductDetail {
     }
 
     /**
-     * Recupera il valore della proprietà name.
+     * Gets the value of the name property.
      * 
      * @return
      *     possible object is
@@ -160,7 +160,7 @@ public class ProductDetail {
     }
 
     /**
-     * Imposta il valore della proprietà name.
+     * Sets the value of the name property.
      * 
      * @param value
      *     allowed object is
@@ -172,7 +172,7 @@ public class ProductDetail {
     }
 
     /**
-     * Recupera il valore della proprietà description.
+     * Gets the value of the description property.
      * 
      * @return
      *     possible object is
@@ -184,7 +184,7 @@ public class ProductDetail {
     }
 
     /**
-     * Imposta il valore della proprietà description.
+     * Sets the value of the description property.
      * 
      * @param value
      *     allowed object is
@@ -196,7 +196,7 @@ public class ProductDetail {
     }
 
     /**
-     * Recupera il valore della proprietà quantity.
+     * Gets the value of the quantity property.
      * 
      * @return
      *     possible object is
@@ -208,7 +208,7 @@ public class ProductDetail {
     }
 
     /**
-     * Imposta il valore della proprietà quantity.
+     * Sets the value of the quantity property.
      * 
      * @param value
      *     allowed object is
@@ -220,7 +220,7 @@ public class ProductDetail {
     }
 
     /**
-     * Recupera il valore della proprietà price.
+     * Gets the value of the price property.
      * 
      * @return
      *     possible object is
@@ -232,7 +232,7 @@ public class ProductDetail {
     }
 
     /**
-     * Imposta il valore della proprietà price.
+     * Sets the value of the price property.
      * 
      * @param value
      *     allowed object is
@@ -244,7 +244,7 @@ public class ProductDetail {
     }
 
     /**
-     * Recupera il valore della proprietà unitPrice.
+     * Gets the value of the unitPrice property.
      * 
      * @return
      *     possible object is
@@ -256,7 +256,7 @@ public class ProductDetail {
     }
 
     /**
-     * Imposta il valore della proprietà unitPrice.
+     * Sets the value of the unitPrice property.
      * 
      * @param value
      *     allowed object is
@@ -268,7 +268,7 @@ public class ProductDetail {
     }
 
     /**
-     * Recupera il valore della proprietà type.
+     * Gets the value of the type property.
      * 
      * @return
      *     possible object is
@@ -280,7 +280,7 @@ public class ProductDetail {
     }
 
     /**
-     * Imposta il valore della proprietà type.
+     * Sets the value of the type property.
      * 
      * @param value
      *     allowed object is
@@ -292,7 +292,7 @@ public class ProductDetail {
     }
 
     /**
-     * Recupera il valore della proprietà vat.
+     * Gets the value of the vat property.
      * 
      * @return
      *     possible object is
@@ -304,7 +304,7 @@ public class ProductDetail {
     }
 
     /**
-     * Imposta il valore della proprietà vat.
+     * Sets the value of the vat property.
      * 
      * @param value
      *     allowed object is
@@ -316,7 +316,7 @@ public class ProductDetail {
     }
 
     /**
-     * Recupera il valore della proprietà discount.
+     * Gets the value of the discount property.
      * 
      * @return
      *     possible object is
@@ -328,7 +328,7 @@ public class ProductDetail {
     }
 
     /**
-     * Imposta il valore della proprietà discount.
+     * Sets the value of the discount property.
      * 
      * @param value
      *     allowed object is
@@ -340,7 +340,7 @@ public class ProductDetail {
     }
 
     /**
-     * Recupera il valore della proprietà requiresShipping.
+     * Gets the value of the requiresShipping property.
      * 
      * @return
      *     possible object is
@@ -352,7 +352,7 @@ public class ProductDetail {
     }
 
     /**
-     * Imposta il valore della proprietà requiresShipping.
+     * Sets the value of the requiresShipping property.
      * 
      * @param value
      *     allowed object is
@@ -364,7 +364,7 @@ public class ProductDetail {
     }
 
     /**
-     * Recupera il valore della proprietà condition.
+     * Gets the value of the condition property.
      * 
      * @return
      *     possible object is
@@ -376,7 +376,7 @@ public class ProductDetail {
     }
 
     /**
-     * Imposta il valore della proprietà condition.
+     * Sets the value of the condition property.
      * 
      * @param value
      *     allowed object is
@@ -388,7 +388,7 @@ public class ProductDetail {
     }
 
     /**
-     * Recupera il valore della proprietà seller.
+     * Gets the value of the seller property.
      * 
      * @return
      *     possible object is
@@ -400,7 +400,7 @@ public class ProductDetail {
     }
 
     /**
-     * Imposta il valore della proprietà seller.
+     * Sets the value of the seller property.
      * 
      * @param value
      *     allowed object is
@@ -412,7 +412,7 @@ public class ProductDetail {
     }
 
     /**
-     * Recupera il valore della proprietà category.
+     * Gets the value of the category property.
      * 
      * @return
      *     possible object is
@@ -424,7 +424,7 @@ public class ProductDetail {
     }
 
     /**
-     * Imposta il valore della proprietà category.
+     * Sets the value of the category property.
      * 
      * @param value
      *     allowed object is
@@ -436,7 +436,7 @@ public class ProductDetail {
     }
 
     /**
-     * Recupera il valore della proprietà subCategory.
+     * Gets the value of the subCategory property.
      * 
      * @return
      *     possible object is
@@ -448,7 +448,7 @@ public class ProductDetail {
     }
 
     /**
-     * Imposta il valore della proprietà subCategory.
+     * Sets the value of the subCategory property.
      * 
      * @param value
      *     allowed object is
@@ -460,7 +460,7 @@ public class ProductDetail {
     }
 
     /**
-     * Recupera il valore della proprietà brand.
+     * Gets the value of the brand property.
      * 
      * @return
      *     possible object is
@@ -472,7 +472,7 @@ public class ProductDetail {
     }
 
     /**
-     * Imposta il valore della proprietà brand.
+     * Sets the value of the brand property.
      * 
      * @param value
      *     allowed object is
@@ -484,7 +484,7 @@ public class ProductDetail {
     }
 
     /**
-     * Recupera il valore della proprietà deliveryAt.
+     * Gets the value of the deliveryAt property.
      * 
      * @return
      *     possible object is
@@ -496,7 +496,7 @@ public class ProductDetail {
     }
 
     /**
-     * Imposta il valore della proprietà deliveryAt.
+     * Sets the value of the deliveryAt property.
      * 
      * @param value
      *     allowed object is

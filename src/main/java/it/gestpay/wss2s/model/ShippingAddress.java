@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per ShippingAddress complex type.
+ * <p>Java class for ShippingAddress complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="ShippingAddress">
@@ -100,7 +100,7 @@ public class ShippingAddress {
     protected String stateCode;
 
     /**
-     * Recupera il valore della proprietà profileID.
+     * Gets the value of the profileID property.
      * 
      * @return
      *     possible object is
@@ -112,7 +112,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Imposta il valore della proprietà profileID.
+     * Sets the value of the profileID property.
      * 
      * @param value
      *     allowed object is
@@ -124,7 +124,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Recupera il valore della proprietà firstName.
+     * Gets the value of the firstName property.
      * 
      * @return
      *     possible object is
@@ -136,7 +136,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Imposta il valore della proprietà firstName.
+     * Sets the value of the firstName property.
      * 
      * @param value
      *     allowed object is
@@ -148,7 +148,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Recupera il valore della proprietà middleName.
+     * Gets the value of the middleName property.
      * 
      * @return
      *     possible object is
@@ -160,7 +160,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Imposta il valore della proprietà middleName.
+     * Sets the value of the middleName property.
      * 
      * @param value
      *     allowed object is
@@ -172,7 +172,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Recupera il valore della proprietà lastname.
+     * Gets the value of the lastname property.
      * 
      * @return
      *     possible object is
@@ -184,7 +184,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Imposta il valore della proprietà lastname.
+     * Sets the value of the lastname property.
      * 
      * @param value
      *     allowed object is
@@ -196,7 +196,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Recupera il valore della proprietà streetName.
+     * Gets the value of the streetName property.
      * 
      * @return
      *     possible object is
@@ -208,7 +208,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Imposta il valore della proprietà streetName.
+     * Sets the value of the streetName property.
      * 
      * @param value
      *     allowed object is
@@ -220,7 +220,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Recupera il valore della proprietà streetname2.
+     * Gets the value of the streetname2 property.
      * 
      * @return
      *     possible object is
@@ -232,7 +232,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Imposta il valore della proprietà streetname2.
+     * Sets the value of the streetname2 property.
      * 
      * @param value
      *     allowed object is
@@ -244,7 +244,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Recupera il valore della proprietà houseNumber.
+     * Gets the value of the houseNumber property.
      * 
      * @return
      *     possible object is
@@ -256,7 +256,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Imposta il valore della proprietà houseNumber.
+     * Sets the value of the houseNumber property.
      * 
      * @param value
      *     allowed object is
@@ -268,7 +268,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Recupera il valore della proprietà houseExtention.
+     * Gets the value of the houseExtention property.
      * 
      * @return
      *     possible object is
@@ -280,7 +280,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Imposta il valore della proprietà houseExtention.
+     * Sets the value of the houseExtention property.
      * 
      * @param value
      *     allowed object is
@@ -292,7 +292,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Recupera il valore della proprietà city.
+     * Gets the value of the city property.
      * 
      * @return
      *     possible object is
@@ -304,7 +304,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Imposta il valore della proprietà city.
+     * Sets the value of the city property.
      * 
      * @param value
      *     allowed object is
@@ -316,7 +316,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Recupera il valore della proprietà zipCode.
+     * Gets the value of the zipCode property.
      * 
      * @return
      *     possible object is
@@ -328,7 +328,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Imposta il valore della proprietà zipCode.
+     * Sets the value of the zipCode property.
      * 
      * @param value
      *     allowed object is
@@ -340,7 +340,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Recupera il valore della proprietà state.
+     * Gets the value of the state property.
      * 
      * @return
      *     possible object is
@@ -352,7 +352,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Imposta il valore della proprietà state.
+     * Sets the value of the state property.
      * 
      * @param value
      *     allowed object is
@@ -364,7 +364,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Recupera il valore della proprietà countryCode.
+     * Gets the value of the countryCode property.
      * 
      * @return
      *     possible object is
@@ -376,7 +376,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Imposta il valore della proprietà countryCode.
+     * Sets the value of the countryCode property.
      * 
      * @param value
      *     allowed object is
@@ -388,7 +388,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Recupera il valore della proprietà email.
+     * Gets the value of the email property.
      * 
      * @return
      *     possible object is
@@ -400,7 +400,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Imposta il valore della proprietà email.
+     * Sets the value of the email property.
      * 
      * @param value
      *     allowed object is
@@ -412,7 +412,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Recupera il valore della proprietà primaryPhone.
+     * Gets the value of the primaryPhone property.
      * 
      * @return
      *     possible object is
@@ -424,7 +424,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Imposta il valore della proprietà primaryPhone.
+     * Sets the value of the primaryPhone property.
      * 
      * @param value
      *     allowed object is
@@ -436,7 +436,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Recupera il valore della proprietà secondaryPhone.
+     * Gets the value of the secondaryPhone property.
      * 
      * @return
      *     possible object is
@@ -448,7 +448,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Imposta il valore della proprietà secondaryPhone.
+     * Sets the value of the secondaryPhone property.
      * 
      * @param value
      *     allowed object is
@@ -460,7 +460,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Recupera il valore della proprietà company.
+     * Gets the value of the company property.
      * 
      * @return
      *     possible object is
@@ -472,7 +472,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Imposta il valore della proprietà company.
+     * Sets the value of the company property.
      * 
      * @param value
      *     allowed object is
@@ -484,7 +484,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Recupera il valore della proprietà stateCode.
+     * Gets the value of the stateCode property.
      * 
      * @return
      *     possible object is
@@ -496,7 +496,7 @@ public class ShippingAddress {
     }
 
     /**
-     * Imposta il valore della proprietà stateCode.
+     * Sets the value of the stateCode property.
      * 
      * @param value
      *     allowed object is

@@ -10,9 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per FullfillmentDetail complex type.
+ * <p>Java class for FullfillmentDetail complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="FullfillmentDetail">
@@ -62,7 +62,7 @@ public class FullfillmentDetail {
     protected String receipt;
 
     /**
-     * Recupera il valore della proprietà status.
+     * Gets the value of the status property.
      * 
      * @return
      *     possible object is
@@ -74,7 +74,7 @@ public class FullfillmentDetail {
     }
 
     /**
-     * Imposta il valore della proprietà status.
+     * Sets the value of the status property.
      * 
      * @param value
      *     allowed object is
@@ -115,7 +115,7 @@ public class FullfillmentDetail {
     }
 
     /**
-     * Recupera il valore della proprietà trackingCompany.
+     * Gets the value of the trackingCompany property.
      * 
      * @return
      *     possible object is
@@ -127,7 +127,7 @@ public class FullfillmentDetail {
     }
 
     /**
-     * Imposta il valore della proprietà trackingCompany.
+     * Sets the value of the trackingCompany property.
      * 
      * @param value
      *     allowed object is
@@ -139,7 +139,7 @@ public class FullfillmentDetail {
     }
 
     /**
-     * Recupera il valore della proprietà trackingNumbers.
+     * Gets the value of the trackingNumbers property.
      * 
      * @return
      *     possible object is
@@ -151,7 +151,7 @@ public class FullfillmentDetail {
     }
 
     /**
-     * Imposta il valore della proprietà trackingNumbers.
+     * Sets the value of the trackingNumbers property.
      * 
      * @param value
      *     allowed object is
@@ -163,7 +163,7 @@ public class FullfillmentDetail {
     }
 
     /**
-     * Recupera il valore della proprietà trackingUrls.
+     * Gets the value of the trackingUrls property.
      * 
      * @return
      *     possible object is
@@ -175,7 +175,7 @@ public class FullfillmentDetail {
     }
 
     /**
-     * Imposta il valore della proprietà trackingUrls.
+     * Sets the value of the trackingUrls property.
      * 
      * @param value
      *     allowed object is
@@ -187,7 +187,7 @@ public class FullfillmentDetail {
     }
 
     /**
-     * Recupera il valore della proprietà message.
+     * Gets the value of the message property.
      * 
      * @return
      *     possible object is
@@ -199,7 +199,7 @@ public class FullfillmentDetail {
     }
 
     /**
-     * Imposta il valore della proprietà message.
+     * Sets the value of the message property.
      * 
      * @param value
      *     allowed object is
@@ -211,7 +211,7 @@ public class FullfillmentDetail {
     }
 
     /**
-     * Recupera il valore della proprietà receipt.
+     * Gets the value of the receipt property.
      * 
      * @return
      *     possible object is
@@ -223,7 +223,7 @@ public class FullfillmentDetail {
     }
 
     /**
-     * Imposta il valore della proprietà receipt.
+     * Sets the value of the receipt property.
      * 
      * @param value
      *     allowed object is

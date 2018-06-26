@@ -41,9 +41,12 @@ public class CallUpdateTokenS2SExample {
     String expiryMonth = "05";
     String expiryYear = "17";
 
+    //set a value if you use apiKey authentication
+    String apiKey = null; 
+
     //call Gestpay ...
     CallUpdateTokenS2SResponse.CallUpdateTokenS2SResult callUpdateTokenS2SResult = wSs2SSoap.callUpdateTokenS2S(shopLogin,
-        token, expiryMonth, expiryYear, withAuth);
+        token, expiryMonth, expiryYear, withAuth, apiKey);
 
     if (callUpdateTokenS2SResult.getContent() == null) {
       showErrorMessage();

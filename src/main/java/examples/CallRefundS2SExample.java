@@ -43,9 +43,12 @@ public class CallRefundS2SExample {
     String refundReason = "item out of stock";
     String chargeBackFraud = "N";
 
+    //set a value if you use apiKey authentication
+    String apiKey = null; 
+
     //call Gestpay ...
     CallRefundS2SResponse.CallRefundS2SResult callRefundS2SResult = wSs2SSoap.callRefundS2S(shopLogin,
-        uicCode, amount, shopTransactionId, bankTransactionId, orderDetail, refundReason, chargeBackFraud);
+        uicCode, amount, shopTransactionId, bankTransactionId, orderDetail, refundReason, chargeBackFraud, apiKey, null);
 
     if (callRefundS2SResult.getContent() == null) {
       showErrorMessage();

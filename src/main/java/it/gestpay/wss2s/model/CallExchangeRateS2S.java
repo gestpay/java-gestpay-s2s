@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -21,6 +21,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="uicCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="isoCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="numericIsoCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="apikey" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -34,7 +35,8 @@ import javax.xml.bind.annotation.XmlType;
     "shopLogin",
     "uicCode",
     "isoCode",
-    "numericIsoCode"
+    "numericIsoCode",
+    "apikey"
 })
 @XmlRootElement(name = "callExchangeRateS2S")
 public class CallExchangeRateS2S {
@@ -43,9 +45,10 @@ public class CallExchangeRateS2S {
     protected String uicCode;
     protected String isoCode;
     protected String numericIsoCode;
+    protected String apikey;
 
     /**
-     * Recupera il valore della proprietà shopLogin.
+     * Gets the value of the shopLogin property.
      * 
      * @return
      *     possible object is
@@ -57,7 +60,7 @@ public class CallExchangeRateS2S {
     }
 
     /**
-     * Imposta il valore della proprietà shopLogin.
+     * Sets the value of the shopLogin property.
      * 
      * @param value
      *     allowed object is
@@ -69,7 +72,7 @@ public class CallExchangeRateS2S {
     }
 
     /**
-     * Recupera il valore della proprietà uicCode.
+     * Gets the value of the uicCode property.
      * 
      * @return
      *     possible object is
@@ -81,7 +84,7 @@ public class CallExchangeRateS2S {
     }
 
     /**
-     * Imposta il valore della proprietà uicCode.
+     * Sets the value of the uicCode property.
      * 
      * @param value
      *     allowed object is
@@ -93,7 +96,7 @@ public class CallExchangeRateS2S {
     }
 
     /**
-     * Recupera il valore della proprietà isoCode.
+     * Gets the value of the isoCode property.
      * 
      * @return
      *     possible object is
@@ -105,7 +108,7 @@ public class CallExchangeRateS2S {
     }
 
     /**
-     * Imposta il valore della proprietà isoCode.
+     * Sets the value of the isoCode property.
      * 
      * @param value
      *     allowed object is
@@ -117,7 +120,7 @@ public class CallExchangeRateS2S {
     }
 
     /**
-     * Recupera il valore della proprietà numericIsoCode.
+     * Gets the value of the numericIsoCode property.
      * 
      * @return
      *     possible object is
@@ -129,7 +132,7 @@ public class CallExchangeRateS2S {
     }
 
     /**
-     * Imposta il valore della proprietà numericIsoCode.
+     * Sets the value of the numericIsoCode property.
      * 
      * @param value
      *     allowed object is
@@ -138,6 +141,30 @@ public class CallExchangeRateS2S {
      */
     public void setNumericIsoCode(String value) {
         this.numericIsoCode = value;
+    }
+
+    /**
+     * Gets the value of the apikey property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getApikey() {
+        return apikey;
+    }
+
+    /**
+     * Sets the value of the apikey property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setApikey(String value) {
+        this.apikey = value;
     }
 
 }

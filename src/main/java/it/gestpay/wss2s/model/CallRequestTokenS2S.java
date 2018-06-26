@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -24,6 +24,9 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="expiryYear" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="cvv" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="withAuth" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="originalId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="apikey" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -40,7 +43,10 @@ import javax.xml.bind.annotation.XmlType;
     "expiryMonth",
     "expiryYear",
     "cvv",
-    "withAuth"
+    "withAuth",
+    "originalId",
+    "description",
+    "apikey"
 })
 @XmlRootElement(name = "CallRequestTokenS2S")
 public class CallRequestTokenS2S {
@@ -52,9 +58,12 @@ public class CallRequestTokenS2S {
     protected String expiryYear;
     protected String cvv;
     protected String withAuth;
+    protected String originalId;
+    protected String description;
+    protected String apikey;
 
     /**
-     * Recupera il valore della proprietà shopLogin.
+     * Gets the value of the shopLogin property.
      * 
      * @return
      *     possible object is
@@ -66,7 +75,7 @@ public class CallRequestTokenS2S {
     }
 
     /**
-     * Imposta il valore della proprietà shopLogin.
+     * Sets the value of the shopLogin property.
      * 
      * @param value
      *     allowed object is
@@ -78,7 +87,7 @@ public class CallRequestTokenS2S {
     }
 
     /**
-     * Recupera il valore della proprietà requestToken.
+     * Gets the value of the requestToken property.
      * 
      * @return
      *     possible object is
@@ -90,7 +99,7 @@ public class CallRequestTokenS2S {
     }
 
     /**
-     * Imposta il valore della proprietà requestToken.
+     * Sets the value of the requestToken property.
      * 
      * @param value
      *     allowed object is
@@ -102,7 +111,7 @@ public class CallRequestTokenS2S {
     }
 
     /**
-     * Recupera il valore della proprietà cardNumber.
+     * Gets the value of the cardNumber property.
      * 
      * @return
      *     possible object is
@@ -114,7 +123,7 @@ public class CallRequestTokenS2S {
     }
 
     /**
-     * Imposta il valore della proprietà cardNumber.
+     * Sets the value of the cardNumber property.
      * 
      * @param value
      *     allowed object is
@@ -126,7 +135,7 @@ public class CallRequestTokenS2S {
     }
 
     /**
-     * Recupera il valore della proprietà expiryMonth.
+     * Gets the value of the expiryMonth property.
      * 
      * @return
      *     possible object is
@@ -138,7 +147,7 @@ public class CallRequestTokenS2S {
     }
 
     /**
-     * Imposta il valore della proprietà expiryMonth.
+     * Sets the value of the expiryMonth property.
      * 
      * @param value
      *     allowed object is
@@ -150,7 +159,7 @@ public class CallRequestTokenS2S {
     }
 
     /**
-     * Recupera il valore della proprietà expiryYear.
+     * Gets the value of the expiryYear property.
      * 
      * @return
      *     possible object is
@@ -162,7 +171,7 @@ public class CallRequestTokenS2S {
     }
 
     /**
-     * Imposta il valore della proprietà expiryYear.
+     * Sets the value of the expiryYear property.
      * 
      * @param value
      *     allowed object is
@@ -174,7 +183,7 @@ public class CallRequestTokenS2S {
     }
 
     /**
-     * Recupera il valore della proprietà cvv.
+     * Gets the value of the cvv property.
      * 
      * @return
      *     possible object is
@@ -186,7 +195,7 @@ public class CallRequestTokenS2S {
     }
 
     /**
-     * Imposta il valore della proprietà cvv.
+     * Sets the value of the cvv property.
      * 
      * @param value
      *     allowed object is
@@ -198,7 +207,7 @@ public class CallRequestTokenS2S {
     }
 
     /**
-     * Recupera il valore della proprietà withAuth.
+     * Gets the value of the withAuth property.
      * 
      * @return
      *     possible object is
@@ -210,7 +219,7 @@ public class CallRequestTokenS2S {
     }
 
     /**
-     * Imposta il valore della proprietà withAuth.
+     * Sets the value of the withAuth property.
      * 
      * @param value
      *     allowed object is
@@ -219,6 +228,78 @@ public class CallRequestTokenS2S {
      */
     public void setWithAuth(String value) {
         this.withAuth = value;
+    }
+
+    /**
+     * Gets the value of the originalId property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getOriginalId() {
+        return originalId;
+    }
+
+    /**
+     * Sets the value of the originalId property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setOriginalId(String value) {
+        this.originalId = value;
+    }
+
+    /**
+     * Gets the value of the description property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getDescription() {
+        return description;
+    }
+
+    /**
+     * Sets the value of the description property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setDescription(String value) {
+        this.description = value;
+    }
+
+    /**
+     * Gets the value of the apikey property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getApikey() {
+        return apikey;
+    }
+
+    /**
+     * Sets the value of the apikey property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setApikey(String value) {
+        this.apikey = value;
     }
 
 }

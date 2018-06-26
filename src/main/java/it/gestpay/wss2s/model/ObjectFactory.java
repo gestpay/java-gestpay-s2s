@@ -150,6 +150,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link CallDeviceActivationResponse }
+     * 
+     */
+    public CallDeviceActivationResponse createCallDeviceActivationResponse() {
+        return new CallDeviceActivationResponse();
+    }
+
+    /**
      * Create an instance of {@link CallReadTrxS2SResponse }
      * 
      */
@@ -206,6 +214,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link CallDeviceActivation }
+     * 
+     */
+    public CallDeviceActivation createCallDeviceActivation() {
+        return new CallDeviceActivation();
+    }
+
+    /**
      * Create an instance of {@link CallExchangeRateS2S }
      * 
      */
@@ -251,6 +267,14 @@ public class ObjectFactory {
      */
     public FullFillmentDetails createFullFillmentDetails() {
         return new FullFillmentDetails();
+    }
+
+    /**
+     * Create an instance of {@link PaymentDeviceDetails }
+     * 
+     */
+    public PaymentDeviceDetails createPaymentDeviceDetails() {
+        return new PaymentDeviceDetails();
     }
 
     /**
@@ -366,6 +390,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link PaymentTypes }
+     * 
+     */
+    public PaymentTypes createPaymentTypes() {
+        return new PaymentTypes();
+    }
+
+    /**
      * Create an instance of {@link ShippingDetails }
      * 
      */
@@ -427,6 +459,14 @@ public class ObjectFactory {
      */
     public ApplePayRequest createApplePayRequest() {
         return new ApplePayRequest();
+    }
+
+    /**
+     * Create an instance of {@link CardReaderPayments }
+     * 
+     */
+    public CardReaderPayments createCardReaderPayments() {
+        return new CardReaderPayments();
     }
 
     /**
@@ -494,11 +534,27 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link CallDeviceActivationResponse.CallDeviceActivationResult }
+     * 
+     */
+    public CallDeviceActivationResponse.CallDeviceActivationResult createCallDeviceActivationResponseCallDeviceActivationResult() {
+        return new CallDeviceActivationResponse.CallDeviceActivationResult();
+    }
+
+    /**
      * Create an instance of {@link CallReadTrxS2SResponse.CallReadTrxS2SResult }
      * 
      */
     public CallReadTrxS2SResponse.CallReadTrxS2SResult createCallReadTrxS2SResponseCallReadTrxS2SResult() {
         return new CallReadTrxS2SResponse.CallReadTrxS2SResult();
+    }
+
+    /**
+     * Create an instance of {@link ArrayOfPassengerDetail }
+     * 
+     */
+    public ArrayOfPassengerDetail createArrayOfPassengerDetail() {
+        return new ArrayOfPassengerDetail();
     }
 
     /**
@@ -582,6 +638,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link PassengerDetail }
+     * 
+     */
+    public PassengerDetail createPassengerDetail() {
+        return new PassengerDetail();
+    }
+
+    /**
      * Create an instance of {@link DiscountCode }
      * 
      */
@@ -598,11 +662,43 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link ArrayOfAccommodationDetail }
+     * 
+     */
+    public ArrayOfAccommodationDetail createArrayOfAccommodationDetail() {
+        return new ArrayOfAccommodationDetail();
+    }
+
+    /**
+     * Create an instance of {@link CardData }
+     * 
+     */
+    public CardData createCardData() {
+        return new CardData();
+    }
+
+    /**
+     * Create an instance of {@link AccommodationDetail }
+     * 
+     */
+    public AccommodationDetail createAccommodationDetail() {
+        return new AccommodationDetail();
+    }
+
+    /**
      * Create an instance of {@link ShippingAddress }
      * 
      */
     public ShippingAddress createShippingAddress() {
         return new ShippingAddress();
+    }
+
+    /**
+     * Create an instance of {@link DeviceProvidedInfo }
+     * 
+     */
+    public DeviceProvidedInfo createDeviceProvidedInfo() {
+        return new DeviceProvidedInfo();
     }
 
     /**

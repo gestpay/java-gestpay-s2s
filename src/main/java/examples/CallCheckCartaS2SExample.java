@@ -50,9 +50,12 @@ public class CallCheckCartaS2SExample {
     // pass a Token to check if it is still valid.
     String tokenValue = null;
 
+    //set a value if you use apiKey authentication
+    String apiKey = null; 
+
     //call Gestpay ...
     CallCheckCartaS2SResponse.CallCheckCartaS2SResult callCheckCartaS2SResult = wSs2SSoap.callCheckCartaS2S(shopLogin,
-        shopTransactionId, cardNumber, expMonth, expYear, cvv2, withAuth, tokenValue);
+        shopTransactionId, cardNumber, expMonth, expYear, cvv2, withAuth, tokenValue, apiKey);
 
     if (callCheckCartaS2SResult.getContent() == null) {
       showErrorMessage();
